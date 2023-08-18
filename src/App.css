@@ -155,13 +155,13 @@
 .part-2 .date-time {  
   position: absolute;
   left: 55px;
-  top: 600px;  
+  top: 750px;  
   z-index: 2;
 }
 
 .date-time p {
   font-family: 'AmericanTypewriter', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .part-2 .hope-you .text4 {
@@ -170,30 +170,33 @@
   width: 300px;
   left: 20px;
   z-index: 1;
+  opacity: 0.9;
 }
 
 .part-2 .long-text {
-  font-size: 10px;
+  font-family: 'AmericanTypewriter', sans-serif;
+  font-size: 12px;
   position: absolute;
   width: 250px;
   z-index: 2;  
+  text-align: left;
+  margin-left: -40px;
 }
 
 .part-2 .dear-people .text3 {
   width: 140px;
-  position: absolute;
+  position: relative;
   display: flex;    
   z-index: 1;
-  right: 130px;
-  top: 580px;
-  margin-top: 10px;
 }
 
 .part-2 .note1 {
+  margin-top: 35px;
+  font-family: 'AmericanTypewriter', sans-serif;
   font-size: 8px;
 }
 .part-2 .symbol3 {
-  margin-top: 80px;
+  margin-top: 5px;
 }
 
 .symbol2-container {
@@ -227,8 +230,6 @@
   width: 350px;  
   left: 0px;
   z-index: 50;
-  opacity: 0.6; /* ความโปร่งใส */
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* เพิ่มเงา */
 }
 
 .part-3 .picture {
@@ -239,8 +240,6 @@
   gap: 20px; /* ระยะห่างระหว่างภาพ */
   z-index: 2;
   bottom: -400px;
-  opacity: 5; /* ความโปร่งใส */
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* เพิ่มเงา */
 }
 
 .part-3 .picture img {

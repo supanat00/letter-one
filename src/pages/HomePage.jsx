@@ -69,7 +69,7 @@ function HomePage() {
                 <img src={text3} className='text3' alt="logo" />
               </div>
 
-              <div className='long-text' style={{ marginLeft: '-30px' }}>
+              <div className='long-text'>
                 <p className='t1'>
                   It's such a long time, we haven't met.
                   This is a good chance and it might surprise you.
@@ -94,8 +94,9 @@ function HomePage() {
                 <img src={text4} className='text4' alt="logo" />
               </div>
 
-              <p className='note1' style={{ textAlign: 'center', marginTop: '10px' }}>
-                PS. Please come with the way you are in <span>BLACK/DARK CHARCOAL.</span>
+              <p className='note1'>
+                PS. Please come with the way you are in 
+                <br></br>BLACK/DARK CHARCOAL.
               </p>
 
               <div className='symbol3-container'>
