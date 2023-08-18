@@ -90,20 +90,22 @@
 .App-main {
   background-color: #F9F8E6;
   background-image: url('../public/background/bg_paper.jpg');
-  background-size: cover; /* ใช้ cover แทนที่ 100% auto */
-  background-repeat: no-repeat;  
-  min-height: 350vh; /* ลดเป็น 100vh แทนที่ 200vh */  
+  background-size: 100% auto; /* ขยายความกว้างเท่ากับ viewport */
+  background-repeat: no-repeat;
+  min-height: 242vh; /* ให้ความสูงเท่ากับ viewport */
+  width: 100vw; /* กำหนดความกว้างเท่ากับ viewport */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: center; /* เปลี่ยนเป็น center แทนที่ space-between */
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: rgb(58, 58, 58);
   padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
 }
+
 
 
 .App-link {
@@ -571,36 +573,35 @@
 
   .part-1 .you-are {
     position: relative;
-    top: -600px;
+    top: 130px;
   }
 
   .part-1 .the-wedding {
     position: relative;
-    top: -600px;
+    top: 150px;
   }
 
   .part-1 .symbol1 {    
     width: 120px;
-    top: -550px;
+    top: 180px;
   }
  
   .part-2 .symbol2 {
     position: relative;  
     width: 100px;
-    top: 160px;
+    top: 60px;
   }
   .part-2 .date-time {     
-    top: 520px;
-    left: 15px;
-      
+    top: 910px;
+    left: 45px;      
   }  
   .date-time p {    
     font-size: 8px;
   }
   .part-2 .dear-people .text3 {
-    width: 130px;
-    top: 525px;
-    right: 80px;
+    width: 200px;
+    top: 915px;
+    right: 120px;
   }
   .part-2 .long-text {    
     font-size: 9px;    
