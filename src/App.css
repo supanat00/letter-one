@@ -1,10 +1,17 @@
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'AuthenticSignatureFont';
+  src: url('./fonts/Authentic Signature.ttf') format('truetype');
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,8 +31,266 @@
   color: white;
 }
 
+.App-splash {
+  background-color: #F9F8E6;
+  background-image: url('../public/background/background.jpg');  
+  background-size: cover;
+  background-repeat: no-repeat; /* Adjust to your needs */  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(58, 58, 58);  
+  padding: 20px; /* Adjust spacing */
+  box-sizing: border-box; /* Include padding in element size */
+}
+
+.App-main {
+  background-color: #F9F8E6;
+  background-image: url('../public/background/onepage_bg.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: rgb(58, 58, 58);
+  padding: 20px; /* ปรับขนาดของพื้นที่ข้างใน App-main */
+  box-sizing: border-box; /* ให้ padding นับเป็นส่วนของขนาด element */
+}
+
 .App-link {
   color: #61dafb;
+}
+
+/* CSS ส่วนของ part-1 */
+.part-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 33.33vh; /* แบ่งส่วนเท่ากันเป็น 3 ส่วน */
+  margin-top: 140px;  
+  margin-bottom: 140px;
+}
+
+.part-1 .text1 {
+  margin-top: 150px;
+  width: 150px;
+}
+
+.part-1 .text2 {
+  width: 250px;
+  margin-top: 3px;
+}
+
+.part-1 .symbol1 {
+  width: 120px;
+  margin-top: 15px;
+}
+
+/* CSS ส่วนของ part-2 */
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 33.33vh; /* แบ่งส่วนเท่ากันเป็น 3 ส่วน */
+  margin-top: 140px;
+}
+
+.part-2 .symbol2 {  
+  width: 100px;  
+}
+
+.part-2 .date-time {
+  text-align: left;
+  font-weight: bold;
+  font-family: Arial, sans-serif; /* เปลี่ยนเป็นฟอนต์ที่คุณต้องการ */
+  font-size: 8px;
+}
+
+.part-2 .hope-you .text4 {
+  position: relative;
+  display: flex;
+  width: 300px;
+  left: 20px;
+  z-index: 1;
+}
+
+.part-2 .long-text {
+  font-size: 10px;
+  position: absolute;
+  width: 250px;
+  z-index: 2;  
+}
+
+.date-time p {
+  margin: 0;
+}
+
+.date-time span {
+  font-weight: normal;
+}
+
+.part-2 .dear-people .text3 {
+  width: 140px;
+}
+
+.part-2 .note1 {
+  font-size: 8px;
+}
+.part-2 .symbol3 {
+  margin-top: 80px;
+}
+
+/* CSS ส่วนของ part-3 */
+.part-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 33.33vh; /* แบ่งส่วนเท่ากันเป็น 3 ส่วน */
+  margin-top: 280px;
+}
+
+.part-3 .noonut img {
+  position: relative;
+  display: flex;
+  width: 350px;  
+  left: 0px;
+  z-index: 50;
+}
+
+.part-3 .picture {
+  position: absolute;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* ระยะห่างระหว่างภาพ */
+  z-index: 2;
+  bottom: -300px;
+}
+
+.part-3 .picture img {
+  width: 250px;
+  z-index: 1;
+}
+
+.pic_m {
+  position: absolute;
+  z-index: 1;  
+}
+
+.pic_l {
+  position: absolute;
+  top: 100;
+  right: 35px;
+  z-index: 1;
+}
+
+.pic_r {
+  position: absolute;
+  top: 100;
+  left: 30px;
+  z-index: 1;
+}
+
+.part-3 .map {
+  width: 300px;  
+}
+
+.part-3 .note-2 {
+  margin: 10px 0;
+  font-size: x-small;
+}
+
+.part-3 .mapbutton {  
+  width: 100px;
+}
+
+.music-loop-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999; /* อัพเดตค่า z-index เพื่อให้ปุ่มอยู่ด้านหน้า */
+}
+
+.music-loop-button button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  z-index: 1;  
+}
+
+.music-button {
+  position: fixed;
+  top: 10px;
+  right: -150px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.music-button img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 50;
+}
+
+/* Style for the auto scroll button */
+.auto-scroll-button {
+  position: fixed;
+  top: 10px;
+  left: -150px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.auto-scroll-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Style for the play animation */
+.music-loop-button button img.play {
+  animation: menurotate 3s linear 0s infinite normal none running;
+  width: 24px;
+  height: 24px;
+}
+
+/* Style for the pause animation */
+.music-loop-button button img.pause {
+  animation: auto ease 0s 1 normal none running;
+  width: 24px;
+  height: 24px;
+}
+
+
+
+/* Animate Adding */
+/* Define the rotation animation */
+@keyframes menurotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +300,309 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Animate */
+/* Adding WaveText */
+@-webkit-keyframes wave-text {
+  00% {
+      transform: translateY(0)
+  }
+
+  60% {
+      transform: translateY(-.6em)
+  }
+
+  100% {
+      transform: translateY(0)
+  }
+}
+
+@keyframes wave-text {
+  00% {
+      transform: translateY(0)
+  }
+
+  60% {
+      transform: translateY(-.6em)
+  }
+
+  100% {
+      transform: translateY(0)
+  }
+}
+
+/* Responsive Screen Setting */
+
+/* Adding responsive styles for mini screens */
+@media (max-width: 360px) {
+  .App-header {
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+  
+  .welcome-text {
+    font-size: 80px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
+  .waveTextAnimated span {
+      display: inline-block;
+      -webkit-animation: wave-text 1s ease-in-out infinite;
+      animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+ 
+}
+
+/* Adding responsive styles for small screens */
+@media (min-width: 361px) and (max-width: 768px) {
+  .App-header {
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+  
+  .welcome-text {
+    font-size: 80px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  .intro {
+    font-family: 'AuthenticSignatureFont'; /* แทน YourDesiredFont ด้วยชื่อฟอนต์ที่คุณต้องการ */
+    font-size: 25px;
+    line-height: 1.5;
+    color: #333;
+    margin-left: 10%; /* เพิ่มระยะข้างซ้าย */
+    margin-right: 10%; /* เพิ่มระยะข้างขวา */
+    margin-top: 0;
+    margin-bottom: 2;
+    font-weight: bold;    
+    transform: rotate(-3deg); /* ปรับองศาให้เอียง -5 องศา */
+  }
+
+  .seeya {
+    font-size: 30px; /* กำหนดขนาดฟอนต์ให้ใหญ่กว่าเล็กน้อย */
+    font-family: 'AuthenticSignatureFont';    
+    font-weight: bold;     
+    transform: rotate(-5deg); /* ปรับองศาให้เอียง -5 องศา */
+  }
+
+  .note {
+    margin-top: 5%;    
+    margin-left: 20%; /* เพิ่มระยะข้างซ้าย */
+    margin-right: 20%; /* เพิ่มระยะข้างขวา */
+    font-size: 10px;    
+  }
+
+  .waveTextAnimated span {
+      display: inline-block;
+      -webkit-animation: wave-text 1s ease-in-out infinite;
+      animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+
+}
+
+/* Adding responsive styles for medium screens */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .App-header {
+    font-size: 26px;
+    /* padding: 20px; */
+  }
+
+  .App-logo {
+    height: 35vmin;
+  }
+  
+  .welcome-text {
+    font-size: 170px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  .waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite
+}
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+
+}
+
+/* Adding responsive styles for large screens */
+@media (min-width: 1201px) and (max-width: 1599px) {
+  .App-header {
+    font-size: 32px;
+    /* padding: 30px; */
+  }
+
+  .App-logo {
+    height: 40vmin;
+  }
+  
+  .welcome-text {
+    font-size: 200px;
+    font-family: 'AuthenticSignatureFont';
+  } 
+
+  .waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite
+}
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+  
+}
+
+/* Adding responsive styles for extra-large screens (if needed) */
+@media (min-width: 1600px) {
+  .App-header {
+    font-size: 36px;
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 45vmin;
+  }
+  
+  .welcome-text {
+    font-size: 300px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  .waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+  
 }
