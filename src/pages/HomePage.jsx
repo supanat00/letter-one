@@ -59,11 +59,11 @@ function HomePage() {
               <img src={symbol2} className='symbol2' alt="logo" />
               </div>
 
-
-              <div className='date-time' style={{ marginLeft: '-30px' }}>
-                <p className='date-time-heading'>Date: <span> Saturday November 18, 2023</span></p>
-                <p className='date-time-heading'>Time: <span> 18:00 - Midnight</span></p>
+              <div className='date-time'>
+                <p className='date-time-heading'>Date:&nbsp;&nbsp;Saturday November 18, 2023</p>
+                <p className='date-time-heading'>Time:&nbsp;&nbsp;18:00 - Midnight</p>
               </div>
+
 
               <div className='dear-people'>
                 <img src={text3} className='text3' alt="logo" />

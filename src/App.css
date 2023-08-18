@@ -49,6 +49,11 @@
   src: url('./fonts/Three Signature.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('./fonts/AmericanTypewriter.ttc') format('truetype');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -97,6 +102,7 @@
   color: rgb(58, 58, 58);
   padding: 20px; /* ปรับขนาดของพื้นที่ข้างใน App-main */
   box-sizing: border-box; /* ให้ padding นับเป็นส่วนของขนาด element */
+  overflow: hidden;
 }
 
 .App-link {
@@ -146,11 +152,16 @@
   width: 120px;  
 }
 
-.part-2 .date-time {
-  text-align: left;
-  font-weight: bold;
-  font-family: Arial, sans-serif; /* เปลี่ยนเป็นฟอนต์ที่คุณต้องการ */
-  font-size: 8px;
+.part-2 .date-time {  
+  position: absolute;
+  left: 55px;
+  top: 600px;  
+  z-index: 2;
+}
+
+.date-time p {
+  font-family: 'AmericanTypewriter', sans-serif;
+  font-size: 10px;
 }
 
 .part-2 .hope-you .text4 {
@@ -168,16 +179,11 @@
   z-index: 2;  
 }
 
-.date-time p {
-  margin: 0;
-}
-
-.date-time span {
-  font-weight: normal;
-}
-
 .part-2 .dear-people .text3 {
   width: 140px;
+  position: relative;
+  display: flex;    
+  z-index: 1;
 }
 
 .part-2 .note1 {
