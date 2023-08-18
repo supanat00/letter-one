@@ -7,7 +7,7 @@ function SplashScreen() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigate('/HomePage'); // Redirect to the home page after 3 seconds
-    }, 30000);
+    }, 3000);
     return () => clearTimeout(timeout);
   }, [navigate]);
 
