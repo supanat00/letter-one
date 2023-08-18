@@ -55,26 +55,27 @@ function HomePage() {
               {/* ส่วนที่ 2 */}
               <div className='part-2'>
 
-                <div>
-                  <img src={symbol2} className='symbol2'  alt="logo" />
-                </div>                
+              <div className='symbol2-container'>
+              <img src={symbol2} className='symbol2' alt="logo" />
+              </div>
 
-              <div className='date-time'>
-                <p>Date: <span> Saturday November 18,2023</span></p>
-                <p>Time: <span> 18:00 - Midnight</span></p>
+
+              <div className='date-time' style={{ marginLeft: '-30px' }}>
+                <p className='date-time-heading'>Date: <span> Saturday November 18, 2023</span></p>
+                <p className='date-time-heading'>Time: <span> 18:00 - Midnight</span></p>
               </div>
 
               <div className='dear-people'>
-              <img src={text3} className='text3' alt="logo" />
-              </div>              
+                <img src={text3} className='text3' alt="logo" />
+              </div>
 
-              <div className='long-text'>              
+              <div className='long-text' style={{ marginLeft: '-30px' }}>
                 <p className='t1'>
-                  It's such a long time, we haven't met.                  
+                  It's such a long time, we haven't met.
                   This is a good chance and it might surprise you.
                   I met someone that I think I'm gonna introduce to you.
                   A normal person that you would see with me
-                  from now on till I'm getting old.                  
+                  from now on till I'm getting old.
                 </p>
                 <p className='t2'>
                   We'll get married! Finally!
@@ -87,19 +88,22 @@ function HomePage() {
                   our good time and the beginning
                   of the next chapter with you all.
                 </p>
-              </div> 
+              </div>
 
               <div className='hope-you'>
                 <img src={text4} className='text4' alt="logo" />
-              </div>            
+              </div>
 
-                <p className= 'note1'>
-                  PS. Please come with the way you are in <span>BLACK/DARK CHARCOAL.</span> 
-                </p>             
+              <p className='note1' style={{ textAlign: 'center', marginTop: '10px' }}>
+                PS. Please come with the way you are in <span>BLACK/DARK CHARCOAL.</span>
+              </p>
 
-              <img src={symbol3} className='symbol3' alt="logo" />
+              <div className='symbol3-container'>
+                <img src={symbol3} className='symbol3' alt="logo" />
+              </div>
 
               </div>
+
 
 
               {/* ส่วนที่ 3 */}

@@ -187,6 +187,21 @@
   margin-top: 80px;
 }
 
+.symbol2-container {
+  animation: heartbeat 1.5s infinite;
+}
+
+.symbol3-container {
+  animation: heartbeat 2s infinite;
+}
+
+.date-time-heading {
+  font-family: 'Silom', sans-serif; /* แทนที่ Your-Font-Family-Name ด้วยชื่อฟอนต์ที่ต้องการ */
+  text-align: left;
+  margin: 0;
+}
+
+
 /* CSS ส่วนของ part-3 */
 .part-3 {
   display: flex;
@@ -194,7 +209,7 @@
   align-items: center;
   justify-content: center;
   height: 33.33vh; /* แบ่งส่วนเท่ากันเป็น 3 ส่วน */
-  margin-top: 280px;
+  margin-top: 300px;
 }
 
 .part-3 .noonut img {
@@ -203,6 +218,8 @@
   width: 350px;  
   left: 0px;
   z-index: 50;
+  opacity: 0.6; /* ความโปร่งใส */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* เพิ่มเงา */
 }
 
 .part-3 .picture {
@@ -212,7 +229,9 @@
   justify-content: center;
   gap: 20px; /* ระยะห่างระหว่างภาพ */
   z-index: 2;
-  bottom: -300px;
+  bottom: -400px;
+  opacity: 5; /* ความโปร่งใส */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* เพิ่มเงา */
 }
 
 .part-3 .picture img {
@@ -369,6 +388,20 @@
       transform: translateY(0)
   }
 }
+
+/* Adding heartbeat */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 /* Responsive Screen Setting */
 
