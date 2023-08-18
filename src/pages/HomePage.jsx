@@ -46,7 +46,7 @@ function HomePage() {
                   <p className='the-wedding'>THE WEDDING OF</p>
                 </div>
 
-                <div style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+                <div style={{ transform: `rotateY(${scrollY}deg)` }}>
                   <img src={symbol1} className='symbol1' alt="logo" />
                 </div>
                 
