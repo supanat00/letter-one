@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import symbol1 from '../icon/symbol_1.png';
 import symbol2 from '../icon/symbol_2.png';
 import symbol3 from '../icon/symbol_3.png';
@@ -14,12 +14,33 @@ import pic_r from '../icon/pic_r.png';
 import { MusicLoopButton } from '../components';
 
 function HomePage() {
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  const handleOrientation = (event) => {
+    const angle = event.beta;
+    const parallaxAmount = angle * 0.1; // Adjust this value as needed
+    setScrollY(-parallaxAmount);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('deviceorientation', handleOrientation);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('deviceorientation', handleOrientation);
+    };
+  }, []);
+
     return (  
           
             <div className='App-main'>
               <MusicLoopButton />              
               {/* ส่วนที่ 1 */}
-              <div className='part-1'>
+              <div className='part-1' style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
                 <p>You are invited to</p>
                 <p>THE WEDDING OF</p>
                 <img src={symbol1} className='symbol1' alt="logo" />
