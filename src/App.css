@@ -181,9 +181,12 @@
 
 .part-2 .dear-people .text3 {
   width: 140px;
-  position: relative;
+  position: absolute;
   display: flex;    
   z-index: 1;
+  right: 130px;
+  top: 580px;
+  margin-top: 10px;
 }
 
 .part-2 .note1 {
