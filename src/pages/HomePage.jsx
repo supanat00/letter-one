@@ -71,21 +71,21 @@ function HomePage() {
 
               <div className='long-text'>
                 <p className='t1'>
-                  It's such a long time, we haven't met.
-                  This is a good chance and it might surprise you.
-                  I met someone that I think I'm gonna introduce to you.
-                  A normal person that you would see with me
+                  It's such a long time, we haven't met.<br></br>
+                  This is a good chance and it might surprise you.<br></br>
+                  I met someone that I think I'm gonna introduce to you.<br></br>
+                  A normal person that you would see with me<br></br>
                   from now on till I'm getting old.
                 </p>
                 <p className='t2'>
-                  We'll get married! Finally!
-                  The wait is really over.
-                  Pleas come to meet us, be our guest.
+                  We'll get married! Finally!<br></br>
+                  The wait is really over.<br></br>
+                  Pleas come to meet us, be our guest.<br></br>
                   I belive that we miss each other.
                 </p>
                 <p className='t3'>
-                  We're looking forward to sharing
-                  our good time and the beginning
+                  We're looking forward to sharing<br></br>
+                  our good time and the beginning<br></br>
                   of the next chapter with you all.
                 </p>
               </div>
@@ -120,9 +120,9 @@ function HomePage() {
                 <img src={pic_r} className='pic_r' alt="logo" />
               </div>              
               
-              <div>
+              
                 <img src={map} className='map' alt="logo" />
-              </div>              
+                           
 
               <p className='note-2'>
                 Place: Rin at Raintree - Sai Hall
@@ -131,9 +131,9 @@ function HomePage() {
               </span>
               </p>
 
-              <div>
+              
                 <img src={mapbutton} className='mapbutton' alt="logo" />
-              </div>              
+                            
 
               </div>
             

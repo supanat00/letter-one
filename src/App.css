@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 0 auto;
+  
 }
 
 .App-logo {
@@ -89,21 +89,22 @@
 
 .App-main {
   background-color: #F9F8E6;
-  background-image: url('../public/background/onepage_bg.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  min-height: 200vh;
+  background-image: url('../public/background/bg_paper.jpg');
+  background-size: cover; /* ใช้ cover แทนที่ 100% auto */
+  background-repeat: no-repeat;  
+  min-height: 350vh; /* ลดเป็น 100vh แทนที่ 200vh */  
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center; /* เปลี่ยนเป็น center แทนที่ space-between */
   font-size: calc(10px + 2vmin);
   color: rgb(58, 58, 58);
-  padding: 20px; /* ปรับขนาดของพื้นที่ข้างใน App-main */
-  box-sizing: border-box; /* ให้ padding นับเป็นส่วนของขนาด element */
+  padding: 20px;
+  box-sizing: border-box;
   overflow: hidden;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -114,10 +115,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
-  margin-top: 100px;  
-  margin-bottom: 140px;
-  background-size: cover; /* ปรับขนาดพื้นหลังให้เต็มทั้งพื้นที่ */
+  justify-content: center; 
 }
 
 .you-are {
@@ -133,8 +131,7 @@
 }
 
 .part-1 .symbol1 {
-  width: 120px;
-  margin-top: 15px;
+  position: relative;
 }
 
 /* CSS ส่วนของ part-2 */
@@ -143,20 +140,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;  
-  margin-top: 80px;
-}
-
-.part-2 .symbol2 {  
-  width: 120px;  
 }
 
 .part-2 .date-time {  
   width: 250px;
   text-align: left;
   position: absolute;
-  z-index: 2;
-  margin-left: -40px;
-  margin-top: -350px;
+  z-index: 2;  
 }
 
 .date-time p {
@@ -193,15 +183,10 @@
   margin-top: 15px;  
 }
 
-.part-2 .note1 {
-  margin-top: 35px;
+.part-2 .note1 {  
   font-family: 'AmericanTypewriter', sans-serif;
   font-size: 8px;
 }
-.part-2 .symbol3 {
-  margin-top: 5px;
-}
-
 .symbol2-container {
   animation: heartbeat 1.5s infinite;
 }
@@ -219,6 +204,7 @@
 
 /* CSS ส่วนของ part-3 */
 .part-3 {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,13 +220,10 @@
 }
 
 .part-3 .picture {
-  position: absolute;
-  width: 200px;
+  position: absolute;  
   display: flex;
-  justify-content: center;
-  gap: 20px; /* ระยะห่างระหว่างภาพ */
-  z-index: 2;
-  bottom: -400px;
+  justify-content: center;  
+  z-index: 2;  
 }
 
 .part-3 .picture img {
@@ -268,16 +251,16 @@
 }
 
 .part-3 .map {
-  width: 300px;  
+  position: relative;
 }
 
 .part-3 .note-2 {
-  margin: 10px 0;
-  font-size: x-small;
+  position: relative;
+  
 }
 
-.part-3 .mapbutton {  
-  width: 100px;
+.part-3 .mapbutton {
+  position: relative;  
 }
 
 .music-loop-button {
@@ -347,7 +330,7 @@
 }
 
 
-
+/* Part. 2 :: */
 /* Animate Adding */
 /* Define the rotation animation */
 @keyframes menurotate {
@@ -368,7 +351,6 @@
   }
 }
 
-/* Animate */
 /* Adding WaveText */
 @-webkit-keyframes wave-text {
   00% {
@@ -411,11 +393,11 @@
   }
 }
 
-
+/* Part. 3 :: */
 /* Responsive Screen Setting */
 
 /* Adding responsive styles for mini screens */
-@media (max-width: 360px) {
+@media (max-width: 319px) {
   .App-header {
     font-size: 20px;
     /* padding: 10px; */
@@ -461,11 +443,82 @@
       -webkit-animation-delay: .6s;
       animation-delay: .6s
   }
- 
-}
 
-/* Adding responsive styles for small screens */
-@media (min-width: 361px) and (max-width: 768px) {
+  .part-1 {
+    margin-top: -180px;
+  }
+
+  .part-1 .symbol1 {    
+    width: 120px;
+    top: 50px;
+  }
+ 
+  .part-2 .symbol2 {
+    position: relative;  
+    width: 100px;
+    top: 160px;
+  }
+  .part-2 .date-time {     
+    top: 520px;
+    left: 15px;
+      
+  }  
+  .date-time p {    
+    font-size: 8px;
+  }
+  .part-2 .dear-people .text3 {
+    width: 130px;
+    top: 525px;
+    right: 80px;
+  }
+  .part-2 .long-text {    
+    font-size: 9px;    
+    width: 280px;  
+    top: 570px;
+    margin-left: 30px;
+  }
+  .part-2 .hope-you .text4 {
+    width: 265px;
+    left: 10px;    
+    top: 130px;
+  }
+  .part-2 .note1 {
+    position: absolute;
+    top: 810px;    
+    font-size: 8px;
+  }
+  .part-2 .symbol3 {
+    width: 50px;
+    position: relative;
+    top: 185px;
+  }
+  .part-3 .noonut img {
+    width: 260px;  
+    bottom: -220px;   
+  }
+  .part-3 .picture {
+    bottom: -220px;    
+    width: 300px; 
+    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+  }
+  .part-3 .picture img {
+    width: 255px;    
+  }
+  .part-3 .map {
+    bottom: -250px;
+    width: 250px;  
+  }
+  .part-3 .note-2 {
+    bottom: -250px;    
+    font-size: 10px;
+  }
+  .part-3 .mapbutton {
+    bottom: -250px;   
+    width: 100px;
+  }
+}
+/* Adding responsive styles for 320 screens */
+@media (min-width: 320px) and (max-width: 479px) {
   .App-header {
     font-size: 20px;
     /* padding: 10px; */
@@ -480,33 +533,7 @@
     font-family: 'AuthenticSignatureFont';
   }
 
-  .intro {
-    font-family: 'AuthenticSignatureFont'; /* แทน YourDesiredFont ด้วยชื่อฟอนต์ที่คุณต้องการ */
-    font-size: 25px;
-    line-height: 1.5;
-    color: #333;
-    margin-left: 10%; /* เพิ่มระยะข้างซ้าย */
-    margin-right: 10%; /* เพิ่มระยะข้างขวา */
-    margin-top: 0;
-    margin-bottom: 2;
-    font-weight: bold;    
-    transform: rotate(-3deg); /* ปรับองศาให้เอียง -5 องศา */
-  }
-
-  .seeya {
-    font-size: 30px; /* กำหนดขนาดฟอนต์ให้ใหญ่กว่าเล็กน้อย */
-    font-family: 'AuthenticSignatureFont';    
-    font-weight: bold;     
-    transform: rotate(-5deg); /* ปรับองศาให้เอียง -5 องศา */
-  }
-
-  .note {
-    margin-top: 5%;    
-    margin-left: 20%; /* เพิ่มระยะข้างซ้าย */
-    margin-right: 20%; /* เพิ่มระยะข้างขวา */
-    font-size: 10px;    
-  }
-
+  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
   .waveTextAnimated span {
       display: inline-block;
       -webkit-animation: wave-text 1s ease-in-out infinite;
@@ -538,29 +565,112 @@
       animation-delay: .6s
   }
 
+  .part-1 {
+    margin-top: 0px;
+  }
+
+  .part-1 .you-are {
+    position: relative;
+    top: -600px;
+  }
+
+  .part-1 .the-wedding {
+    position: relative;
+    top: -600px;
+  }
+
+  .part-1 .symbol1 {    
+    width: 120px;
+    top: -550px;
+  }
+ 
+  .part-2 .symbol2 {
+    position: relative;  
+    width: 100px;
+    top: 160px;
+  }
+  .part-2 .date-time {     
+    top: 520px;
+    left: 15px;
+      
+  }  
+  .date-time p {    
+    font-size: 8px;
+  }
+  .part-2 .dear-people .text3 {
+    width: 130px;
+    top: 525px;
+    right: 80px;
+  }
+  .part-2 .long-text {    
+    font-size: 9px;    
+    width: 280px;  
+    top: 570px;
+    margin-left: 30px;
+  }
+  .part-2 .hope-you .text4 {
+    width: 265px;
+    left: 10px;    
+    top: 130px;
+  }
+  .part-2 .note1 {
+    position: absolute;
+    top: 810px;    
+    font-size: 8px;
+  }
+  .part-2 .symbol3 {
+    width: 50px;
+    position: relative;
+    top: 185px;
+  }
+  .part-3 .noonut img {
+    width: 310px;  
+    bottom: -530px;   
+  }
+  .part-3 .picture {
+    bottom: -1130px;    
+    width: 350px; 
+    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+  }
+  .part-3 .picture img {
+    width: 300px;    
+  }
+  .part-3 .map {
+    bottom: -650px;
+    width: 320px;  
+  }
+  .part-3 .note-2 {
+    bottom: -670px;    
+    font-size: 10px;
+  }
+  .part-3 .mapbutton {
+    bottom: -700px;   
+    width: 160px;
+  }
 }
 
-/* Adding responsive styles for medium screens */
-@media (min-width: 769px) and (max-width: 1200px) {
+/* Adding responsive styles for 480 screens */
+@media (min-width: 480px) and (max-width: 599px) {
   .App-header {
-    font-size: 26px;
-    /* padding: 20px; */
+    font-size: 20px;
+    /* padding: 10px; */
   }
 
   .App-logo {
-    height: 35vmin;
+    height: 30vmin;
   }
   
   .welcome-text {
-    font-size: 170px;
+    font-size: 80px;
     font-family: 'AuthenticSignatureFont';
   }
 
+  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
   .waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-    animation: wave-text 1s ease-in-out infinite
-}
+      display: inline-block;
+      -webkit-animation: wave-text 1s ease-in-out infinite;
+      animation: wave-text 1s ease-in-out infinite
+  }
 
   .waveTextAnimated span:nth-of-type(1) {
       -webkit-animation-delay: .2s;
@@ -587,29 +697,223 @@
       animation-delay: .6s
   }
 
+  .part-1 {
+    margin-top: -180px;
+  }
+
+  .part-1 .symbol1 {    
+    width: 120px;
+    top: 50px;
+  }
+ 
+  .part-2 .symbol2 {
+    position: relative;  
+    width: 100px;
+    top: 160px;
+  }
+  .part-2 .date-time {     
+    top: 520px;
+    left: 15px;
+      
+  }  
+  .date-time p {    
+    font-size: 8px;
+  }
+  .part-2 .dear-people .text3 {
+    width: 130px;
+    top: 525px;
+    right: 80px;
+  }
+  .part-2 .long-text {    
+    font-size: 9px;    
+    width: 280px;  
+    top: 570px;
+    margin-left: 30px;
+  }
+  .part-2 .hope-you .text4 {
+    width: 265px;
+    left: 10px;    
+    top: 130px;
+  }
+  .part-2 .note1 {
+    position: absolute;
+    top: 810px;    
+    font-size: 8px;
+  }
+  .part-2 .symbol3 {
+    width: 50px;
+    position: relative;
+    top: 185px;
+  }
+  .part-3 .noonut img {
+    width: 260px;  
+    bottom: -220px;   
+  }
+  .part-3 .picture {
+    bottom: -220px;    
+    width: 300px; 
+    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+  }
+  .part-3 .picture img {
+    width: 255px;    
+  }
+  .part-3 .map {
+    bottom: -250px;
+    width: 250px;  
+  }
+  .part-3 .note-2 {
+    bottom: -250px;    
+    font-size: 10px;
+  }
+  .part-3 .mapbutton {
+    bottom: -250px;   
+    width: 100px;
+  }
 }
 
-/* Adding responsive styles for large screens */
-@media (min-width: 1201px) and (max-width: 1599px) {
+/* Adding responsive styles for 600px screens */
+@media (min-width: 600px) and (max-width: 767px) {
   .App-header {
-    font-size: 32px;
-    /* padding: 30px; */
+    font-size: 20px;
+    /* padding: 10px; */
   }
 
   .App-logo {
-    height: 40vmin;
+    height: 30vmin;
   }
   
   .welcome-text {
-    font-size: 200px;
+    font-size: 80px;
     font-family: 'AuthenticSignatureFont';
-  } 
+  }
+
+  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
+  .waveTextAnimated span {
+      display: inline-block;
+      -webkit-animation: wave-text 1s ease-in-out infinite;
+      animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+
+  .part-1 {
+    margin-top: -180px;
+  }
+
+  .part-1 .symbol1 {    
+    width: 120px;
+    top: 50px;
+  }
+ 
+  .part-2 .symbol2 {
+    position: relative;  
+    width: 100px;
+    top: 160px;
+  }
+  .part-2 .date-time {     
+    top: 520px;
+    left: 15px;
+      
+  }  
+  .date-time p {    
+    font-size: 8px;
+  }
+  .part-2 .dear-people .text3 {
+    width: 130px;
+    top: 525px;
+    right: 80px;
+  }
+  .part-2 .long-text {    
+    font-size: 9px;    
+    width: 280px;  
+    top: 570px;
+    margin-left: 30px;
+  }
+  .part-2 .hope-you .text4 {
+    width: 265px;
+    left: 10px;    
+    top: 130px;
+  }
+  .part-2 .note1 {
+    position: absolute;
+    top: 810px;    
+    font-size: 8px;
+  }
+  .part-2 .symbol3 {
+    width: 50px;
+    position: relative;
+    top: 185px;
+  }
+  .part-3 .noonut img {
+    width: 260px;  
+    bottom: -220px;   
+  }
+  .part-3 .picture {
+    bottom: -220px;    
+    width: 300px; 
+    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+  }
+  .part-3 .picture img {
+    width: 255px;    
+  }
+  .part-3 .map {
+    bottom: -250px;
+    width: 250px;  
+  }
+  .part-3 .note-2 {
+    bottom: -250px;    
+    font-size: 10px;
+  }
+  .part-3 .mapbutton {
+    bottom: -250px;   
+    width: 100px;
+  }
+}
+
+/* Adding responsive styles for 768px */
+@media (min-width: 768px) and (max-width: 899px) {
+  .App-header {
+    font-size: 36px;
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 45vmin;
+  }
+  
+  .welcome-text {
+    font-size: 300px;
+    font-family: 'AuthenticSignatureFont';
+  }
 
   .waveTextAnimated span {
     display: inline-block;
     -webkit-animation: wave-text 1s ease-in-out infinite;
     animation: wave-text 1s ease-in-out infinite
-}
+  }
 
   .waveTextAnimated span:nth-of-type(1) {
       -webkit-animation-delay: .2s;
@@ -638,8 +942,106 @@
   
 }
 
-/* Adding responsive styles for extra-large screens (if needed) */
-@media (min-width: 1600px) {
+/* Adding responsive styles for 900px */
+@media (min-width: 900px) and (max-width: 1023px) {
+  .App-header {
+    font-size: 36px;
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 45vmin;
+  }
+  
+  .welcome-text {
+    font-size: 300px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  .waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+  
+}
+
+/* Adding responsive styles for 1024px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .App-header {
+    font-size: 36px;
+    padding: 40px;
+  }
+
+  .App-logo {
+    height: 45vmin;
+  }
+  
+  .welcome-text {
+    font-size: 300px;
+    font-family: 'AuthenticSignatureFont';
+  }
+
+  .waveTextAnimated span {
+    display: inline-block;
+    -webkit-animation: wave-text 1s ease-in-out infinite;
+    animation: wave-text 1s ease-in-out infinite
+  }
+
+  .waveTextAnimated span:nth-of-type(1) {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s
+  }
+
+  .waveTextAnimated span:nth-of-type(2) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+  }
+
+  .waveTextAnimated span:nth-of-type(3) {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s
+  }
+
+  .waveTextAnimated span:nth-of-type(4) {
+      -webkit-animation-delay: .5s;
+      animation-delay: .5s
+  }
+
+  .waveTextAnimated span:nth-of-type(5) {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s
+  }
+  
+}
+
+/* Adding responsive styles for 1200px */
+@media (min-width: 1200px) {
   .App-header {
     font-size: 36px;
     padding: 40px;
