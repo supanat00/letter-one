@@ -153,10 +153,12 @@
 }
 
 .part-2 .date-time {  
+  width: 250px;
+  text-align: left;
   position: absolute;
-  left: 55px;
-  top: 750px;  
   z-index: 2;
+  margin-left: -40px;
+  margin-top: -300px;
 }
 
 .date-time p {
@@ -171,6 +173,7 @@
   left: 20px;
   z-index: 1;
   opacity: 0.9;
+  
 }
 
 .part-2 .long-text {
@@ -185,9 +188,11 @@
 
 .part-2 .dear-people .text3 {
   width: 140px;
-  position: relative;
+  position: absolute;
   display: flex;    
   z-index: 1;
+  margin-left: -60px;
+  
 }
 
 .part-2 .note1 {
