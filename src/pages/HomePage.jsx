@@ -48,8 +48,10 @@ function HomePage() {
 
               {/* ส่วนที่ 2 */}
               <div className='part-2'>
-                
-                <img src={symbol2} className='symbol2' alt="logo" />
+
+                <div style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
+                  <img src={symbol2} className='symbol2'  alt="logo" />
+                </div>                
 
               <div className='date-time'>
                 <p>Date: <span> Saturday November 18,2023</span></p>
@@ -81,7 +83,7 @@ function HomePage() {
                 </p>
               </div> 
 
-              <div className='hope-you'>
+              <div className='hope-you' style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
                 <img src={text4} className='text4' alt="logo" />
               </div>            
 
@@ -97,20 +99,19 @@ function HomePage() {
               {/* ส่วนที่ 3 */}
               <div className='part-3'>
               
-              <div className='noonut'>
+              <div className='noonut' style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
                 <img src={text5} className='text5' alt="logo" />
               </div>
 
-              <div className='picture'>
+              <div className='picture' style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
                 <img src={pic_l} className='pic_l' alt="logo" />
                 <img src={pic_m} className='pic_m' alt="logo" />
                 <img src={pic_r} className='pic_r' alt="logo" />
-              </div>
-
+              </div>              
               
-              
-
-              <img src={map} className='map' alt="logo" />
+              <div style={{ transform: `translateY(-${scrollY * 0.5}px)` }}>
+                <img src={map} className='map' alt="logo" />
+              </div>              
 
               <p className='note-2'>
                 Place: Rin at Raintree - Sai Hall
@@ -119,7 +120,7 @@ function HomePage() {
               </span>
               </p>
 
-              <img src={mapbutton} className='mapbutton' alt="logo" />
+              <img src={mapbutton} className='mapbutton' style={{ transform: `translateY(-${scrollY * 0.5}px)` }} alt="logo" />
 
               </div>
             
