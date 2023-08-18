@@ -10,8 +10,43 @@
 
 /* Fonts */
 @font-face {
+  font-family: 'Amettasignature';
+  src: url('./fonts/Amettasignature.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'AuthenticSignatureFont';
   src: url('./fonts/Authentic Signature.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DBHeaventBdv3.2';
+  src: url('./fonts/DB Heavent Bd v3.2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'EdwardSignature';
+  src: url('./fonts/Edward Signature.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HeySunsetBrushFont';
+  src: url('./fonts/Hey Sunset Brush Font.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MagistaBrush';
+  src: url('./fonts/Magista Brush.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Silom';
+  src: url('./fonts/Silom.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ThreeSignature';
+  src: url('./fonts/Three Signature.ttf') format('truetype');
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -80,14 +115,16 @@
   background-size: cover; /* ปรับขนาดพื้นหลังให้เต็มทั้งพื้นที่ */
 }
 
-.part-1 .text1 {
-  margin-top: 150px;
-  width: 150px;
+.you-are {
+  font-family: 'HeySunsetBrushFont', sans-serif;
+  font-size: 15px;
+  /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
 }
 
-.part-1 .text2 {
-  width: 250px;
-  margin-top: 3px;
+.the-wedding {
+  font-family: 'HeySunsetBrushFont', sans-serif;
+  font-size: 15px;
+  /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
 }
 
 .part-1 .symbol1 {
@@ -102,11 +139,11 @@
   align-items: center;
   justify-content: center;
   height: 33.33vh; /* แบ่งส่วนเท่ากันเป็น 3 ส่วน */
-  margin-top: 130px;
+  margin-top: 120px;
 }
 
 .part-2 .symbol2 {  
-  width: 100px;  
+  width: 120px;  
 }
 
 .part-2 .date-time {

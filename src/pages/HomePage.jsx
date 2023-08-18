@@ -11,7 +11,7 @@ import pic_m from '../icon/pic_m.png';
 import pic_l from '../icon/pic_l.png';
 import pic_r from '../icon/pic_r.png';
 
-import { MusicLoopButton } from '../components';
+// import { MusicLoopButton } from '../components';
 
 function HomePage() {
   const [scrollY, setScrollY] = useState(0);
@@ -37,19 +37,25 @@ function HomePage() {
 
     return (  
           
-            <div className='App-main'>
-              <MusicLoopButton />              
+            <div className='App-main'>                            
               {/* ส่วนที่ 1 */}
-              <div className='part-1' style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
-                <p>You are invited to</p>
-                <p>THE WEDDING OF</p>
-                <img src={symbol1} className='symbol1' alt="logo" />
+              
+              <div className='part-1' >
+                <div>
+                  <p className='you-are'>You are invited to</p>
+                  <p className='the-wedding'>THE WEDDING OF</p>
+                </div>
+
+                <div style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+                  <img src={symbol1} className='symbol1' alt="logo" />
+                </div>
+                
               </div>
 
               {/* ส่วนที่ 2 */}
               <div className='part-2'>
 
-                <div style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+                <div>
                   <img src={symbol2} className='symbol2'  alt="logo" />
                 </div>                
 
@@ -83,7 +89,7 @@ function HomePage() {
                 </p>
               </div> 
 
-              <div className='hope-you' style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+              <div className='hope-you'>
                 <img src={text4} className='text4' alt="logo" />
               </div>            
 
@@ -99,17 +105,17 @@ function HomePage() {
               {/* ส่วนที่ 3 */}
               <div className='part-3'>
               
-              <div className='noonut' style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+              <div className='noonut'>
                 <img src={text5} className='text5' alt="logo" />
               </div>
 
-              <div className='picture' style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+              <div className='picture'>
                 <img src={pic_l} className='pic_l' alt="logo" />
                 <img src={pic_m} className='pic_m' alt="logo" />
                 <img src={pic_r} className='pic_r' alt="logo" />
               </div>              
               
-              <div style={{ transform: `translateY(-${scrollY * 0.3}px)` }}>
+              <div>
                 <img src={map} className='map' alt="logo" />
               </div>              
 
@@ -120,7 +126,9 @@ function HomePage() {
               </span>
               </p>
 
-              <img src={mapbutton} className='mapbutton' style={{ transform: `translateY(-${scrollY * 0.3}px)` }} alt="logo" />
+              <div>
+                <img src={mapbutton} className='mapbutton' alt="logo" />
+              </div>              
 
               </div>
             
