@@ -163,8 +163,7 @@
   width: 300px;
   left: 20px;
   z-index: 1;
-  opacity: 0.9;
-  margin-top: 80px;
+  opacity: 0.9;  
 }
 
 .part-2 .long-text {
@@ -173,17 +172,14 @@
   position: absolute;
   width: 250px;
   z-index: 2;  
-  text-align: left;
-  margin-left: -40px;
+  text-align: left;  
 }
 
 .part-2 .dear-people .text3 {
   width: 140px;
   position: absolute;
   display: flex;    
-  z-index: 1;
-  margin-left: -60px;
-  margin-top: 15px;  
+  z-index: 1;  
 }
 
 .part-2 .note1 {  
@@ -243,15 +239,11 @@
 
 .pic_l {
   position: absolute;
-  top: 100;
-  right: 35px;
   z-index: 1;
 }
 
 .pic_r {
   position: absolute;
-  top: 100;
-  left: 30px;
   z-index: 1;
 }
 
@@ -591,19 +583,19 @@
  
   .part-2 .symbol2-container .symbol2 {     
     width: 100px;
-    top: -650px;
+    top: -615px;
   }
   .part-2 .date-time {     
-    top: 910px;
+    top: 900px;
     left: 45px;      
   }  
   .date-time p {    
-    font-size: 8px;
+    font-size: 10px;
   }
   .part-2 .dear-people .text3 {
-    width: 200px;
+    width: 220px;
     top: 915px;
-    right: 120px;
+    right: 100px;
   }
   .part-2 .long-text {    
     font-size: 12px;    
@@ -612,25 +604,25 @@
     margin-left: -50px;
   }
   .part-2 .hope-you .text4 {
-    width: 265px;
+    width: 350px;
     left: 10px;    
-    top: -590px;
+    top: -610px;
   }
   .part-2 .note1 {
     position: absolute;
-    top: 810px;    
-    font-size: 8px;
+    top: 1300px;    
+    font-size: 10px;
   }
   .part-2 .symbol3 {
     width: 50px;    
-    top: 185px;
+    top: -530px;
   }
   .part-3 .noonut img {
-    width: 310px;  
-    bottom: -530px;   
+    width: 410px;  
+    top: -1350px;   
   }
   .part-3 .picture {
-    bottom: -1130px;    
+    top: 1500px;    
     width: 350px; 
     gap: 20px; /* ระยะห่างระหว่างภาพ */    
   }
