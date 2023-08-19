@@ -98,7 +98,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* ยืดเนื้อหาให้อยู่กลางตามแนวแกนตั้ง */
+  justify-content: top; /* ยืดเนื้อหาให้อยู่กลางตามแนวแกนตั้ง */
   font-size: calc(10px + 2vmin);
   color: rgb(58, 58, 58);
   padding: 20px;
@@ -151,7 +151,7 @@
 .part-2 .date-time {  
   width: 250px;
   text-align: left;
-  position: absolute;
+  position: relative;
   z-index: 2;  
 }
 
@@ -172,7 +172,7 @@
 .part-2 .long-text {
   font-family: 'AmericanTypewriter', sans-serif;
   font-size: 12px;
-  position: absolute;
+  position: relative;
   width: 250px;
   z-index: 2;  
   text-align: left;  
@@ -180,7 +180,7 @@
 
 .part-2 .dear-people .text3 {
   width: 140px;
-  position: absolute;
+  position: relative;
   display: flex;    
   z-index: 1;  
 }
@@ -216,7 +216,7 @@
 }
 
 .part-3 .noonut img {
-  position: absolute;
+  position: relative;
   display: flex;
   width: 350px;  
   left: 0px;
@@ -236,17 +236,17 @@
 }
 
 .pic_m {
-  position: absolute;
+  position: relative;
   z-index: 1;  
 }
 
 .pic_l {
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 
 .pic_r {
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 
@@ -571,25 +571,25 @@
 
   .part-1 .you-are {
     position: relative;
-    top: -700px;    
+    top: 0px;    
   }
 
   .part-1 .the-wedding {
     position: relative;
-    top: -700px;
+    top: 0px;
   }
 
   .part-1 .symbol1 {    
     width: 120px;
-    top: -650px;
+    top: 50px;
   }
  
   .part-2 .symbol2-container .symbol2 {     
     width: 100px;
-    top: -280px;
+    top: 0px;
   }
   .part-2 .date-time {     
-    top: 900px;
+    top: 0px;
     left: 45px;      
   }  
   .date-time p {    
@@ -597,13 +597,13 @@
   }
   .part-2 .dear-people .text3 {
     width: 220px;
-    top: 930px;
+    top: 0px;
     right: 100px;
   }
   .part-2 .long-text {    
     font-size: 12px;    
     width: 280px;  
-    top: 980px;
+    top: 0px;
     margin-left: -50px;
   }
   .part-2 .hope-you .text4 {
@@ -624,12 +624,12 @@
     top: 1750px;   
   }
   .part-3 .picture {
-    top: 200px;    
-    width: 350px; 
-    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+    top: 100px;    
+    width: 0px; 
+    gap: 0px; /* ระยะห่างระหว่างภาพ */    
   }
   .part-3 .picture img {
-    width: 380px;    
+    width: 100px;    
   }
   .part-3 .map {
     bottom: -450px;
