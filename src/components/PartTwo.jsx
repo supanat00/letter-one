@@ -1,14 +1,14 @@
 import React from 'react';
-import symbol2 from '../icon/symbol_2.png';
-import symbol3 from '../icon/symbol_3.png';
-import text3 from '../icon/dear_people_we_love.png';
-import text4 from '../icon/hope_you_all_make_it.png';
+// import symbol2 from '../icon/symbol_2.png';
+// import symbol3 from '../icon/symbol_3.png';
+// import text3 from '../icon/dear_people_we_love.png';
+// import text4 from '../icon/hope_you_all_make_it.png';
 
 function PartTwo ()  {
   return (
     <div className='part-2'>
 
-    <div className='symbol2-container'>
+    {/* <div className='symbol2-container'>
     <img src={symbol2} className='symbol2' alt="logo" />
     </div>
 
@@ -54,7 +54,7 @@ function PartTwo ()  {
 
     <div className='symbol3-container'>
       <img src={symbol3} className='symbol3' alt="logo" />
-    </div>
+    </div> */}
 
     </div>
   );

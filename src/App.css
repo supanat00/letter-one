@@ -106,7 +106,7 @@
 }
 
 .HomePage {
-  height: auto; /* กำหนดความสูงเท่ากับขนาดของภาพพื้นหลัง */
+  height: 6838px; /* กำหนดความสูงเท่ากับขนาดของภาพพื้นหลัง */
   width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
   background-image: url('../public/background/bg_paper.jpg');
   background-size: 100% auto;
@@ -118,8 +118,9 @@
   justify-content: flex-start;
   min-height: 100vh;
   width: 100vw;
-  /* เพื่อให้สามารถเลื่อนดูส่วนที่ยาวเกินหน้าจอได้ */
+  overflow-y: scroll; /* เพื่อให้สามารถเลื่อนดูส่วนที่ยาวเกินหน้าจอได้ */
 }
+
 
 
 
@@ -134,7 +135,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  padding: 20px; /* ปรับขนาดของพื้นที่ภายใน .part-1 */
+  text-align: center;
 }
 
 .you-are {
@@ -157,7 +160,8 @@
 }
 
 /* CSS ส่วนของ part-2 */
-.part-2 {
+.part-2 {  
+  width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +228,8 @@
 
 
 /* CSS ส่วนของ part-3 */
-.part-3 {
+.part-3 {  
+  width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -580,23 +585,19 @@
       animation-delay: .6s
   }
 
-  .part-1 {
-    margin-top: 0px;
-  }
-
   .part-1 .you-are {
     position: relative;
-    top: 0px;    
+    top: 150px;    
   }
 
   .part-1 .the-wedding {
     position: relative;
-    top: 0px;
+    top: 150px;
   }
 
-  .part-1 .symbol1 {    
-    width: 120px;
-    top: 150px;
+  .part-1 .symbol1 {
+    max-width: 100%;
+    top: 1900px;
   }
  
   .part-2 .symbol2-container .symbol2 {     

@@ -1,16 +1,16 @@
 import React from 'react';
-import text5 from '../icon/noonut.png';
-import map from '../icon/map.png';
-import mapbutton from '../icon/map_button.png'
-import pic_m from '../icon/pic_m.png';
-import pic_l from '../icon/pic_l.png';
-import pic_r from '../icon/pic_r.png';
+// import text5 from '../icon/noonut.png';
+// import map from '../icon/map.png';
+// import mapbutton from '../icon/map_button.png'
+// import pic_m from '../icon/pic_m.png';
+// import pic_l from '../icon/pic_l.png';
+// import pic_r from '../icon/pic_r.png';
 
 function PartThree ()  {
   return (
     <div className='part-3'>
               
-              <div className='noonut'>
+              {/* <div className='noonut'>
                 <img src={text5} className='text5' alt="logo" />
               </div>
 
@@ -33,7 +33,7 @@ function PartThree ()  {
 
               
                 <img src={mapbutton} className='mapbutton' alt="logo" />
-                            
+                             */}
 
               </div>
   );

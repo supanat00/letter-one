@@ -1,17 +1,17 @@
 import React from 'react';
 
 // import { MusicLoopButton } from '../components';
-// import { PartOne, PartTwo, PartThree } from '../components';
+import { PartOne, PartTwo, PartThree } from '../components';
 
 function HomePage() {
     return (            
             <div className='HomePage'>                            
               {/* ส่วนที่ 1 */}
-              {/* < PartOne /> */}
+              < PartOne />
               {/* ส่วนที่ 2 */}
-              {/* < PartTwo /> */}
+              < PartTwo />
               {/* ส่วนที่ 3 */}            
-              {/* < PartThree /> */}
+              < PartThree />
             </div>
           
       );
