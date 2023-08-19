@@ -96,7 +96,7 @@
   max-height: 1200vh;
   width: 100vw; /* กำหนดความกว้างเท่ากับ viewport */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   justify-content: space-between;
