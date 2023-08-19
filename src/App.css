@@ -619,23 +619,23 @@
     top: -140px;
   }
   .part-3 .noonut img {
-    width: 400px;  
-    top: 1750px;   
+    width: 380px;  
+    top: 100px;   
   }
   .part-3 .picture {
-    top: 0px;    
-    width: 200px; 
+    top: -80px;   
     gap: 0px; /* ระยะห่างระหว่างภาพ */    
   }
   .part-3 .picture img {
-    width: 100px;    
+    width: 120px;    
   }
+
   .part-3 .map {
-    bottom: -450px;
+    bottom: 50px;
     width: 320px;  
   }
   .part-3 .note-2 {
-    bottom: -450px;    
+    bottom: 60px;    
     font-size: 10px;
   }
   .part-3 .mapbutton {
