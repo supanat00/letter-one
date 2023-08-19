@@ -118,8 +118,8 @@
   justify-content: flex-start;
   min-height: 100vh;
   width: 100vw;
-  overflow-y: scroll; /* เพื่อให้สามารถเลื่อนดูส่วนที่ยาวเกินหน้าจอได้ */
 }
+
 
 
 
