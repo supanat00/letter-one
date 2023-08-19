@@ -115,16 +115,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
+  justify-content: flex-start;  
   width: 100vw;
+  height: 100vh;
+  max-height: 150vh;
 }
-
-
-
-
-
-
+.Home {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
 
 .App-link {
   color: #61dafb;
@@ -465,7 +465,7 @@
   }
 
   .part-1 {
-    margin-top: -180px;
+    margin-top: 0px;
   }
 
   .part-1 .symbol1 {    
@@ -585,80 +585,6 @@
       animation-delay: .6s
   }
 
-  .part-1 .you-are {
-    position: relative;
-    top: 150px;    
-  }
-
-  .part-1 .the-wedding {
-    position: relative;
-    top: 150px;
-  }
-
-  .part-1 .symbol1 {
-    max-width: 100%;
-    top: 1900px;
-  }
- 
-  .part-2 .symbol2-container .symbol2 {     
-    width: 100px;
-    top: 0px;
-  }
-  .part-2 .date-time {     
-    top: 0px;
-    left: 45px;      
-  }  
-  .date-time p {    
-    font-size: 10px;
-  }
-  .part-2 .dear-people .text3 {
-    width: 220px;
-    top: 0px;
-    right: 100px;
-  }
-  .part-2 .long-text {    
-    font-size: 12px;    
-    width: 280px;  
-    top: 0px;
-    margin-left: -50px;
-  }
-  .part-2 .hope-you .text4 {
-    width: 400px;
-    left: 10px;    
-    top: -180px;
-  }
-  .part-2 .note1 {   
-    top: -150px;    
-    font-size: 10px;
-  }
-  .part-2 .symbol3 {
-    width: 50px;    
-    top: -140px;
-  }
-  .part-3 .noonut img {
-    width: 380px;  
-    top: 100px;   
-  }
-  .part-3 .picture {
-    top: -80px;   
-    gap: 0px; /* ระยะห่างระหว่างภาพ */    
-  }
-  .part-3 .picture img {
-    width: 120px;    
-  }
-
-  .part-3 .map {
-    bottom: 50px;
-    width: 320px;  
-  }
-  .part-3 .note-2 {
-    bottom: 60px;    
-    font-size: 10px;
-  }
-  .part-3 .mapbutton {
-    bottom: 0px;   
-    width: 160px;
-  }
 }
 
 /* Adding responsive styles for 480 screens */
@@ -708,79 +634,6 @@
       -webkit-animation-delay: .6s;
       animation-delay: .6s
   }
-
-  .part-1 {
-    margin-top: -180px;
-  }
-
-  .part-1 .symbol1 {    
-    width: 120px;
-    top: 50px;
-  }
- 
-  .part-2 .symbol2 {
-    position: relative;  
-    width: 100px;
-    top: 160px;
-  }
-  .part-2 .date-time {     
-    top: 520px;
-    left: 15px;
-      
-  }  
-  .date-time p {    
-    font-size: 8px;
-  }
-  .part-2 .dear-people .text3 {
-    width: 130px;
-    top: 525px;
-    right: 80px;
-  }
-  .part-2 .long-text {    
-    font-size: 9px;    
-    width: 280px;  
-    top: 570px;
-    margin-left: 30px;
-  }
-  .part-2 .hope-you .text4 {
-    width: 265px;
-    left: 10px;    
-    top: 130px;
-  }
-  .part-2 .note1 {
-    position: absolute;
-    top: 810px;    
-    font-size: 8px;
-  }
-  .part-2 .symbol3 {
-    width: 50px;
-    position: relative;
-    top: 185px;
-  }
-  .part-3 .noonut img {
-    width: 260px;  
-    bottom: -220px;   
-  }
-  .part-3 .picture {
-    bottom: -220px;    
-    width: 300px; 
-    gap: 20px; /* ระยะห่างระหว่างภาพ */    
-  }
-  .part-3 .picture img {
-    width: 255px;    
-  }
-  .part-3 .map {
-    bottom: -250px;
-    width: 250px;  
-  }
-  .part-3 .note-2 {
-    bottom: -250px;    
-    font-size: 10px;
-  }
-  .part-3 .mapbutton {
-    bottom: -250px;   
-    width: 100px;
-  }
 }
 
 /* Adding responsive styles for 600px screens */
@@ -829,79 +682,6 @@
   .waveTextAnimated span:nth-of-type(5) {
       -webkit-animation-delay: .6s;
       animation-delay: .6s
-  }
-
-  .part-1 {
-    margin-top: -180px;
-  }
-
-  .part-1 .symbol1 {    
-    width: 120px;
-    top: 50px;
-  }
- 
-  .part-2 .symbol2 {
-    position: relative;  
-    width: 100px;
-    top: 160px;
-  }
-  .part-2 .date-time {     
-    top: 520px;
-    left: 15px;
-      
-  }  
-  .date-time p {    
-    font-size: 8px;
-  }
-  .part-2 .dear-people .text3 {
-    width: 130px;
-    top: 525px;
-    right: 80px;
-  }
-  .part-2 .long-text {    
-    font-size: 9px;    
-    width: 280px;  
-    top: 570px;
-    margin-left: 30px;
-  }
-  .part-2 .hope-you .text4 {
-    width: 265px;
-    left: 10px;    
-    top: 130px;
-  }
-  .part-2 .note1 {
-    position: absolute;
-    top: 810px;    
-    font-size: 8px;
-  }
-  .part-2 .symbol3 {
-    width: 50px;
-    position: relative;
-    top: 185px;
-  }
-  .part-3 .noonut img {
-    width: 260px;  
-    bottom: -220px;   
-  }
-  .part-3 .picture {
-    bottom: -220px;    
-    width: 300px; 
-    gap: 20px; /* ระยะห่างระหว่างภาพ */    
-  }
-  .part-3 .picture img {
-    width: 255px;    
-  }
-  .part-3 .map {
-    bottom: -250px;
-    width: 250px;  
-  }
-  .part-3 .note-2 {
-    bottom: -250px;    
-    font-size: 10px;
-  }
-  .part-3 .mapbutton {
-    bottom: -250px;   
-    width: 100px;
   }
 }
 
