@@ -92,7 +92,7 @@
   background-image: url('../public/background/bg_paper.jpg');
   background-size: 100% auto; /* ขยายความกว้างเท่ากับ viewport */
   background-repeat: no-repeat;
-  min-height: 400vh; /* ให้ความสูงเท่ากับ viewport */
+  min-height: 300vh; /* ให้ความสูงเท่ากับ viewport */
   max-height: 1200vh;
   width: 100vw; /* กำหนดความกว้างเท่ากับ viewport */
   display: flex;
@@ -622,12 +622,12 @@
     top: -1350px;   
   }
   .part-3 .picture {
-    top: 1500px;    
+    top: 1750px;    
     width: 350px; 
     gap: 20px; /* ระยะห่างระหว่างภาพ */    
   }
   .part-3 .picture img {
-    width: 300px;    
+    width: 400px;    
   }
   .part-3 .map {
     bottom: -650px;
