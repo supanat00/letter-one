@@ -92,7 +92,8 @@
   background-image: url('../public/background/bg_paper.jpg');
   background-size: 100% auto; /* ขยายความกว้างเท่ากับ viewport */
   background-repeat: no-repeat;
-  min-height: 242vh; /* ให้ความสูงเท่ากับ viewport */
+  min-height: 400vh; /* ให้ความสูงเท่ากับ viewport */
+  max-height: 1200vh;
   width: 100vw; /* กำหนดความกว้างเท่ากับ viewport */
   display: flex;
   flex-direction: column;
@@ -189,11 +190,13 @@
   font-family: 'AmericanTypewriter', sans-serif;
   font-size: 8px;
 }
-.symbol2-container {
+.symbol2-container .symbol2{
+  position: relative;
   animation: heartbeat 1.5s infinite;
 }
 
-.symbol3-container {
+.symbol3-container .symbol3{
+  position: relative;
   animation: heartbeat 2s infinite;
 }
 
@@ -586,10 +589,9 @@
     top: 180px;
   }
  
-  .part-2 .symbol2 {
-    position: relative;  
+  .part-2 .symbol2-container .symbol2 {     
     width: 100px;
-    top: 60px;
+    top: -650px;
   }
   .part-2 .date-time {     
     top: 910px;
@@ -620,8 +622,7 @@
     font-size: 8px;
   }
   .part-2 .symbol3 {
-    width: 50px;
-    position: relative;
+    width: 50px;    
     top: 185px;
   }
   .part-3 .noonut img {
