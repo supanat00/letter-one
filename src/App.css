@@ -122,6 +122,7 @@
 }
 
 .you-are {
+  position: relative;
   width: 300px;
   font-family: 'HeySunsetBrushFont', sans-serif;
   font-size: 15px;
@@ -129,6 +130,7 @@
 }
 
 .the-wedding {
+  position: relative;
   font-family: 'HeySunsetBrushFont', sans-serif;
   font-size: 15px;
   /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
@@ -184,6 +186,7 @@
 }
 
 .part-2 .note1 {  
+  position: relative;
   font-family: 'AmericanTypewriter', sans-serif;
   font-size: 8px;
 }
@@ -213,7 +216,7 @@
 }
 
 .part-3 .noonut img {
-  position: relative;
+  position: absolute;
   display: flex;
   width: 350px;  
   left: 0px;
@@ -221,13 +224,13 @@
 }
 
 .part-3 .picture {
-  position: absolute;  
+  position: relative;  
   display: flex;
   justify-content: center;  
   z-index: 2;  
 }
 
-.part-3 .picture img {
+.part-3 .picture img {  
   width: 250px;
   z-index: 1;
 }
@@ -627,7 +630,7 @@
     gap: 20px; /* ระยะห่างระหว่างภาพ */    
   }
   .part-3 .picture img {
-    width: 400px;    
+    width: 380px;    
   }
   .part-3 .map {
     bottom: -450px;
