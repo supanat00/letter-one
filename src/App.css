@@ -606,15 +606,15 @@
     right: 120px;
   }
   .part-2 .long-text {    
-    font-size: 9px;    
+    font-size: 12px;    
     width: 280px;  
-    top: 570px;
-    margin-left: 30px;
+    top: 980px;
+    margin-left: -50px;
   }
   .part-2 .hope-you .text4 {
     width: 265px;
     left: 10px;    
-    top: 130px;
+    top: -590px;
   }
   .part-2 .note1 {
     position: absolute;
