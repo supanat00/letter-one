@@ -90,16 +90,15 @@
 .App-main {
   background-color: #F9F8E6;
   background-image: url('../public/background/bg_paper.jpg');
-  background-size: 100% auto; /* ขยายความกว้างเท่ากับ viewport */
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  min-height: 300vh; /* ให้ความสูงเท่ากับ viewport */
+  min-height: 300vh;
   max-height: 1200vh;
-  width: 100vw; /* กำหนดความกว้างเท่ากับ viewport */
+  width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: center; /* ยืดเนื้อหาให้อยู่กลางตามแนวแกนตั้ง */
   font-size: calc(10px + 2vmin);
   color: rgb(58, 58, 58);
   padding: 20px;
@@ -116,12 +115,13 @@
 /* CSS ส่วนของ part-1 */
 .part-1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center; 
 }
 
 .you-are {
+  width: 300px;
   font-family: 'HeySunsetBrushFont', sans-serif;
   font-size: 15px;
   /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
@@ -568,7 +568,7 @@
 
   .part-1 .you-are {
     position: relative;
-    top: 130px;
+    top: -1000px;    
   }
 
   .part-1 .the-wedding {
