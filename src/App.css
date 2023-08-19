@@ -106,7 +106,7 @@
 }
 
 .HomePage {
-  height: 6838px; /* กำหนดความสูงเท่ากับขนาดของภาพพื้นหลัง */
+  height: auto; /* กำหนดความสูงเท่ากับขนาดของภาพพื้นหลัง */
   width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
   background-image: url('../public/background/bg_paper.jpg');
   background-size: 100% auto;
