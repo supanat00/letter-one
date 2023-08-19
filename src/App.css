@@ -586,7 +586,7 @@
  
   .part-2 .symbol2-container .symbol2 {     
     width: 100px;
-    top: -615px;
+    top: -280px;
   }
   .part-2 .date-time {     
     top: 900px;
@@ -597,7 +597,7 @@
   }
   .part-2 .dear-people .text3 {
     width: 220px;
-    top: 915px;
+    top: 930px;
     right: 100px;
   }
   .part-2 .long-text {    
@@ -607,12 +607,11 @@
     margin-left: -50px;
   }
   .part-2 .hope-you .text4 {
-    width: 350px;
+    width: 400px;
     left: 10px;    
-    top: -610px;
+    top: -180px;
   }
-  .part-2 .note1 {
-    position: absolute;
+  .part-2 .note1 {   
     top: 1300px;    
     font-size: 10px;
   }
