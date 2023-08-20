@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PartOne from '../components/PartOne';
 
 function SplashScreen() {
   const navigate = useNavigate();
@@ -10,13 +11,7 @@ function SplashScreen() {
 
   return (
     <div className="App-splash" onClick={handlePageChange} onTouchEnd={handlePageChange}>
-      <div className="waveTextAnimated welcome-text">
-        <span>L</span>
-        <span>O</span>
-        <span>V</span>
-        <span>E</span>
-        <span>S.</span>
-      </div>
+      < PartOne />
     </div>
   );
 }
