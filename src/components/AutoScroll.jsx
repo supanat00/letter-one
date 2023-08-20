@@ -12,7 +12,7 @@ function AutoScroll() {
     if (isScrolling) {
       const smoothScroll = () => {
         const currentScroll = window.scrollY;
-        const targetScroll = currentScroll + 3;
+        const targetScroll = currentScroll + 1;
         window.scrollTo(0, targetScroll);
 
         if (targetScroll < document.body.scrollHeight) {
