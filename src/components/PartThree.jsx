@@ -11,14 +11,7 @@ function PartThree ()  {
     <div className='partthree'>
               
               
-                <img src={text5} className='image-6' alt="logo" />
-              
-
-              {/* <div className='picture'>
-                <img src={pic_l} className='pic_l' alt="logo" />
-                <img src={pic_m} className='pic_m' alt="logo" />
-                <img src={pic_r} className='pic_r' alt="logo" />
-              </div>               */}
+                <img src={text5} className='image-6' alt="logo" />      
 
               <div class="w-layout-blockcontainer picture w-container">
                 <img src={pic_l} alt="" class="pic-l"/>

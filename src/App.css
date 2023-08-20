@@ -1,14 +1,3 @@
-.App {
-  min-height: 100%;
-  color: #333;
-  background-color: #fff;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -73,43 +62,6 @@ img {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-splash {
-  background-color: #F9F8E6;
-  background-image: url('../public/background/background.jpg');  
-  background-size: cover;
-  background-repeat: no-repeat; /* Adjust to your needs */  
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(58, 58, 58);  
-  padding: 20px; /* Adjust spacing */
-  box-sizing: border-box; /* Include padding in element size */
-}
-
-.HomePage {
-  background-image: url('../public/background/bg_paper.jpg');
-  background-position: 0 0;
-  background-repeat: repeat-y;
-  background-size: cover; /* ขยายขนาดภาพเพื่อครอบคลุมพื้นที่ */  
-  background-attachment: scroll;
-  display: block;
-  transform: translate(0);  
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -152,32 +104,21 @@ img {
 
 
 /* Components */
+
 .music-loop-button {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 9999; /* อัพเดตค่า z-index เพื่อให้ปุ่มอยู่ด้านหน้า */
-}
-
-.music-loop-button button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  z-index: 1;  
+  top: 45px; /* ระยะห่างจากด้านบน */
+  right: 55px; /* ระยะห่างจากด้านขวา */
+  z-index: 999; /* ค่า z-index เพื่อให้ปุ่มอยู่หน้าหน้าจอ */
 }
 
 .music-button {
-  position: fixed;
-  top: 10px;
-  right: -150px;
+  position: fixed;  
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 1;
+  z-index: 8;
 }
 
 .music-button img {
@@ -288,23 +229,25 @@ img {
 /* Adding responsive styles for mini screens */
 @media (max-width: 479px) {
   .App {
-    -webkit-text-fill-color: inherit;
     background-image: url('../public/background/bg_paper.jpg');
     background-position: 0 0;
     background-size: auto;
     background-attachment: fixed;
-    background-clip: border-box;
+    background-clip: border-box;   
   }
+  
 
   .HomePage {
     background-image: url('../public/background/bg_paper.jpg');
-    background-position: 0 0;
+    background-position: top center;
     background-repeat: repeat-y;
-    background-size: cover; /* ขยายขนาดภาพเพื่อครอบคลุมพื้นที่ */  
+    background-size: cover;
     background-attachment: scroll;
-    display: block;
-    transform: translate(0);
+    display: block; /* เปลี่ยนเป็น flex */
+    flex-direction: column; /* จัดเรียงแนวตั้ง */
+    align-items: center; /* จัดกึ่งกลางแนวนอน */
   }
+  
 
   .you-are {
     text-align: center;

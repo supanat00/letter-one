@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import music from '../sound/music.mp4'
 import Pause from '../icon/music_on.svg';
 import Play from '../icon/music_mute.svg';
@@ -16,8 +16,13 @@ function MusicLoopButton () {
     setIsPlaying(!isPlaying);
   };
 
+  useEffect(() => {
+    audioRef.current.play(); // เริ่มเล่นเมื่อโหลดเสร็จ
+    setIsPlaying(true);
+  }, []);
+
   return (
-    <div className="music-loop-button">   
+    <div className="music-loop-button top-right">   
       {/* Music Button */}
       <button onClick={togglePlay} className="music-button">
         {isPlaying ? (
