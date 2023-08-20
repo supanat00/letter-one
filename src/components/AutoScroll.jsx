@@ -6,21 +6,23 @@ function AutoScroll() {
 
   const toggleScroll = () => {
     setIsScrolling(!isScrolling);
-    if (!isScrolling) {
-      window.scrollTo(0, 0); // ยกเลิกการเลื่อนเมื่อหยุด
-    }
   };
-  
 
   useEffect(() => {
     if (isScrolling) {
-      const intervalId = setInterval(() => {
-        window.scrollBy(0, isScrolling ? 3 : -3);
-      }, 50);
+      const smoothScroll = () => {
+        const currentScroll = window.scrollY;
+        const targetScroll = currentScroll + 3;
+        window.scrollTo(0, targetScroll);
 
-      return () => {
-        clearInterval(intervalId);
+        if (targetScroll < document.body.scrollHeight) {
+          requestAnimationFrame(smoothScroll);
+        } else {
+          setIsScrolling(false);
+        }
       };
+
+      smoothScroll();
     }
   }, [isScrolling]);
 
