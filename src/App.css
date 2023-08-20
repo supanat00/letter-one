@@ -215,6 +215,15 @@ img {
   }
 }
 
+@keyframes rotateVertical {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /* Adding WaveText */
 @-webkit-keyframes wave-text {
   00% {
@@ -349,7 +358,8 @@ img {
   .symbol-one {
     position: relative;
     top: 60px;
-    animation: spinLeft 6s linear infinite;
+    animation: rotateVertical 8s linear infinite;
+    transform-origin: center center;
   }
 
   .container-2 {
@@ -528,7 +538,9 @@ img {
     top: -310px;
   }
 
-  .image-8 {    
+  .image-8 {
+    max-width: 100%;
+    width: 196px;
     cursor: pointer;
     position: relative;
     top: -300px;
