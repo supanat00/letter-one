@@ -205,24 +205,7 @@ img {
 
 /* Part. 2 :: */
 /* Animate Adding */
-/* Define the rotation animation */
-@keyframes menurotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Adding WaveText */
 @-webkit-keyframes wave-text {
