@@ -13,7 +13,7 @@ function PartTwo ()  {
     <div className="date-time">
       Date : &nbsp;&nbsp;&nbsp;Saturday November 18, 2023
         <br></br>
-      Time :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18:00 - Midnight
+      Time :&nbsp;&nbsp;&nbsp;18:00 - Midnight
     </div>
 
       <img src={text3} className='image-3' alt="logo" />

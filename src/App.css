@@ -307,6 +307,18 @@ img {
   }
 }
 
+/* Parallax Effect */
+
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7; /* ปรับค่าเพื่อให้มีการกระพริบตามต้องการ */
+  }
+}
+
 /* Part. 3 :: */
 /* Responsive Screen Setting */
 
@@ -471,6 +483,7 @@ img {
     line-height: 15px;
     left: -45px;
     right: 0;
+    animation: flicker 1.5s infinite;
   }
 
   .partone {
