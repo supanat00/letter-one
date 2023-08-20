@@ -333,7 +333,7 @@ img {
   }
 
   .App-splash {
-    background-image: url('../public/background/background.jpg');
+    background-image: url('../public/background/background3.jpg');
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -367,8 +367,7 @@ img {
     top: 25px;
     width: 0;
     overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid black forwards;
+    white-space: nowrap;    
     animation: typing 3s steps(50, end) forwards;
     }
 
@@ -381,9 +380,14 @@ img {
     top: 30px;
     width: 0;
     overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid black forwards;
+    white-space: nowrap;    
     animation: typing 3s steps(50, end) forwards;
+  }
+
+  .splash-div .partone .symbol-one {
+    position: relative;
+    top: 60px;    
+    transform-origin: center center;
   }
   
   .HomePage {
@@ -452,10 +456,9 @@ img {
     text-align: left;
   }
 
-  .symbol-one {
+  .HomePage .partone .symbol-one {
     position: relative;
-    top: 60px;
-    animation: rotateVertical 8s linear infinite;
+    top: 60px;    
     transform-origin: center center;
   }
 
@@ -506,7 +509,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 700px;
+    top: 700px;    
   }
 
   .partthree {
@@ -539,7 +542,16 @@ img {
     text-decoration: none;
     display: block;
     position: relative;
-    top: 0;    
+    top: 0;      
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity 1s ease, transform 1s ease;  
+  }  
+
+  .paragraph-1.active {
+    opacity: 1; /* เปลี่ยนค่าเพื่อให้เอฟเฟ็กต์เริ่มแสดงผล */
+    transform: translateX(0); /* ขยับกลับมาอยู่ที่จุดเริ่มต้น */
+    animation: typing 15s steps(50, end) forwards; /* เพิ่ม animation การพิมพ์ */
   }
 
   .image-4 {
@@ -581,6 +593,17 @@ img {
     display: block;
     position: relative;
     top: -200px;
+    overflow: hidden;
+    white-space: nowrap;   
+    transition: opacity 1s ease, transform 1s ease;
+    animation: flicker 1.5s infinite;
+  }
+
+  .note-one.active {
+    opacity: 1; /* เปลี่ยนค่าเพื่อให้เอฟเฟ็กต์เริ่มแสดงผล */
+    transform: translateX(0); /* ขยับกลับมาอยู่ที่จุดเริ่มต้น */     
+    animation: typing 10s steps(50, end) forwards, flicker 1.5s infinite; /* เพิ่ม animation การพิมพ์ */
+    
   }
 
   .image-5 {
