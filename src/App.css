@@ -269,6 +269,23 @@ img {
     background-attachment: fixed;
     background-clip: border-box;   
   }
+
+  .App-splash {
+    background-image: url('../public/background/background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .splash-div .partone{
+    top: 250px;
+  }
   
 
   .HomePage {

@@ -11,7 +11,9 @@ function SplashScreen() {
 
   return (
     <div className="App-splash" onClick={handlePageChange} onTouchEnd={handlePageChange}>
+      < div className='splash-div'>
       < PartOne />
+      </div>      
     </div>
   );
 }
