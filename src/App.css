@@ -489,6 +489,8 @@ img {
     animation: flicker 1.5s infinite;
   }
 
+  
+
   .partone {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -602,7 +604,7 @@ img {
   .note-one.active {
     opacity: 1; /* เปลี่ยนค่าเพื่อให้เอฟเฟ็กต์เริ่มแสดงผล */
     transform: translateX(0); /* ขยับกลับมาอยู่ที่จุดเริ่มต้น */     
-    animation: typing 20s steps(50, end) forwards, flicker 1.5s infinite; /* เพิ่ม animation การพิมพ์ */
+    animation: typing 20s steps(150, end) forwards, flicker 1.5s infinite; /* เพิ่ม animation การพิมพ์ */
     
   }
 

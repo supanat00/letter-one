@@ -5,15 +5,23 @@ import text3 from '../icon/dear_people_we_love.png';
 import text4 from '../icon/hope_you_all_make_it.png';
 
 function PartTwo ()  {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isParagraphVisible, setIsParagraphVisible] = useState(false);
+  const [isNoteVisible, setIsNoteVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.querySelector('.paragraph-1','.note-one');
-      if (element) {
-        const rect = element.getBoundingClientRect();
+      const paragraphElement = document.querySelector('.paragraph-1');
+      if (paragraphElement) {
+        const rect = paragraphElement.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-        setIsVisible(isVisible);
+        setIsParagraphVisible(isVisible);
+      }
+
+      const noteElement = document.querySelector('.note-one');
+      if (noteElement) {
+        const rect = noteElement.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setIsNoteVisible(isVisible);
       }
     };
 
@@ -23,6 +31,7 @@ function PartTwo ()  {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <div className='parttwo'>
     
@@ -40,24 +49,24 @@ function PartTwo ()  {
 
       <div className="w-layout-blockcontainer container-3 w-container">
 
-        <p className={`paragraph-1 ${isVisible ? 'active' : ''}`}>It's such a long time, we haven't met.
+        <p className={`paragraph-1 ${isParagraphVisible ? 'active' : ''}`}>It's such a long time, we haven't met.
         <br></br>This is a good chance and it might surprise you.
         <br></br>I met someone that I think I'm gonna introduce to you.
         <br></br>A normal person that you would see with me
         <br></br>from now on till I'm getting old.</p>
         
-        <p className={`paragraph-1 ${isVisible ? 'active' : ''}`}>We'll get married! Finally!
+        <p className={`paragraph-1 ${isParagraphVisible ? 'active' : ''}`}>We'll get married! Finally!
         <br></br>The wait is really over.
         <br></br>Pleas come to meet us, be our guest.
         <br></br>I belive that we miss each other.</p>
         
-        <p className={`paragraph-1 ${isVisible ? 'active' : ''}`}>We're looking forward to sharing
+        <p className={`paragraph-1 ${isParagraphVisible ? 'active' : ''}`}>We're looking forward to sharing
         <br></br>our good time and the beginning
         <br></br>of the next chapter with you all.</p>
         
-        </div>   
+      </div>   
 
-        <div className={`note-one ${isVisible ? 'active' : ''}`}>PS. Please come with the way you are in
+        <div className={`note-one ${isNoteVisible ? 'active' : ''}`}>PS. Please come with the way you are in
         <br></br>BLACK/DARK CHARCOAL.</div>
     
       <img src={symbol3} className='image-5' alt="logo" />    
