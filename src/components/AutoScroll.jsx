@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Scrollbutton from '../icon/scroll-down.svg';
 
-function AutoScroll () {
-  const [isScrolling, setIsScrolling] = useState(false);
+function AutoScroll() {
+  const [isScrolling, setIsScrolling] = useState(true); // เริ่มต้นเลื่อนหน้าจอ
 
   const toggleScroll = () => {
     setIsScrolling(!isScrolling);
+    if (!isScrolling) {
+      window.scrollTo(0, 0); // ยกเลิกการเลื่อนเมื่อหยุด
+    }
   };
+  
 
   useEffect(() => {
     if (isScrolling) {
@@ -22,12 +26,13 @@ function AutoScroll () {
 
   return (
     <div className="auto-scroll">
-
       {/* Auto Scroll Button */}
-      <button className={`auto-scroll-button ${isScrolling ? 'scrolling' : ''}`} onClick={toggleScroll}>
+      <button
+        className={`auto-scroll-button ${isScrolling ? 'scrolling' : ''}`}
+        onClick={toggleScroll}
+      >
         <img src={Scrollbutton} alt={isScrolling ? 'Scroll Up' : 'Scroll Down'} />
       </button>
-
     </div>
   );
 }

@@ -131,19 +131,21 @@ img {
 /* Style for the auto scroll button */
 .auto-scroll-button {
   position: fixed;
-  top: 10px;
-  left: -150px;
+  top: 45px;
+  left: 10px; /* แก้ตำแหน่งซ้ายของ auto-scroll-button */
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 1;
+  z-index: 50;
 }
 
 .auto-scroll-button img {
   width: 24px;
   height: 24px;
+  z-index: 50;
 }
+
 
 /* Style for the play animation */
 .music-loop-button button img.play {

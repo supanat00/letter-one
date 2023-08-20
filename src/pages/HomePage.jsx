@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MusicLoopButton } from '../components';
+import { MusicLoopButton, AutoScroll } from '../components';
 import { PartOne, PartTwo, PartThree } from '../components';
 
 function HomePage() {
@@ -8,6 +8,7 @@ function HomePage() {
             <div className='HomePage'>
               <div>
               < MusicLoopButton />
+              < AutoScroll />
               </div>                          
               {/* ส่วนที่ 1 */}
               < PartOne />

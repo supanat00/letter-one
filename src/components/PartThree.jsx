@@ -13,10 +13,10 @@ function PartThree ()  {
               
                 <img src={text5} className='image-6' alt="logo" />      
 
-              <div class="w-layout-blockcontainer picture w-container">
-                <img src={pic_l} alt="" class="pic-l"/>
-                  <img src={pic_m} alt="" class="pic-m"/>
-                    <img src={pic_r} alt="" class="pic-r"/>
+              <div className="w-layout-blockcontainer picture w-container">
+                <img src={pic_l} alt="" className="pic-l"/>
+                  <img src={pic_m} alt="" className="pic-m"/>
+                    <img src={pic_r} alt="" className="pic-r"/>
 
                     </div>
               
@@ -24,7 +24,7 @@ function PartThree ()  {
                 <img src={map} className='image-7' alt="logo" />
                            
 
-                <div class="text-block">Place: Rin at Raintree - Sai Hall
+                <div className="text-block">Place: Rin at Raintree - Sai Hall
                 <br></br>2 276 soi RAMA IX 17, Bang Kapi, Huai Khwang, Bangkok 10310</div>
 
               
