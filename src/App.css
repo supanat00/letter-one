@@ -313,6 +313,25 @@ img {
   .splash-div .partone{
     top: 250px;
   }
+
+  .splash-div .partone .you-are{
+    text-align: center;
+    font-family: 'AmericanTypewriter';
+    font-weight: 535;
+    font-size: 11px;
+    display: block;
+    position: relative;
+    top: 15px;
+  }
+
+  .splash-div .partone .thewedding{
+    z-index: 600;
+    text-align: center;
+    font-family: 'Silom';
+    font-weight: 500;
+    position: relative;
+    top: 30px;
+  }
   
   .HomePage {
     background-image: url('../public/background/bg_paper.jpg');
@@ -329,7 +348,7 @@ img {
 
   .you-are {
     text-align: center;
-    font-family: '';
+    font-family: 'AmericanTypewriter';
     font-weight: 535;
     font-size: 11px;
     display: block;
