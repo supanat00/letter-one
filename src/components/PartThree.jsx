@@ -1,39 +1,42 @@
 import React from 'react';
-// import text5 from '../icon/noonut.png';
-// import map from '../icon/map.png';
-// import mapbutton from '../icon/map_button.png'
-// import pic_m from '../icon/pic_m.png';
-// import pic_l from '../icon/pic_l.png';
-// import pic_r from '../icon/pic_r.png';
+import text5 from '../icon/noonut.png';
+import map from '../icon/map.png';
+import mapbutton from '../icon/map_button.png'
+import pic_m from '../icon/pic_m.png';
+import pic_l from '../icon/pic_l.png';
+import pic_r from '../icon/pic_r.png';
 
 function PartThree ()  {
   return (
-    <div className='part-3'>
+    <div className='partthree'>
               
-              {/* <div className='noonut'>
-                <img src={text5} className='text5' alt="logo" />
-              </div>
+              
+                <img src={text5} className='image-6' alt="logo" />
+              
 
-              <div className='picture'>
+              {/* <div className='picture'>
                 <img src={pic_l} className='pic_l' alt="logo" />
                 <img src={pic_m} className='pic_m' alt="logo" />
                 <img src={pic_r} className='pic_r' alt="logo" />
-              </div>              
+              </div>               */}
+
+              <div class="w-layout-blockcontainer picture w-container">
+                <img src={pic_l} alt="" class="pic-l"/>
+                  <img src={pic_m} alt="" class="pic-m"/>
+                    <img src={pic_r} alt="" class="pic-r"/>
+
+                    </div>
               
               
-                <img src={map} className='map' alt="logo" />
+                <img src={map} className='image-7' alt="logo" />
                            
 
-              <p className='note-2'>
-                Place: Rin at Raintree - Sai Hall
-              <span>
-                276 soi RAMA IX 17, Bang Kapi, Huai Khwang, Bangkok 10310
-              </span>
-              </p>
+                <div class="text-block">Place: Rin at Raintree - Sai Hall
+                <br></br>2 276 soi RAMA IX 17, Bang Kapi, Huai Khwang, Bangkok 10310</div>
 
               
-                <img src={mapbutton} className='mapbutton' alt="logo" />
-                             */}
+                <img src={mapbutton} className='image-8' alt="logo"  />
+                            
 
               </div>
   );

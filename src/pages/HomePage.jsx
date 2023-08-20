@@ -5,7 +5,7 @@ import { PartOne, PartTwo, PartThree } from '../components';
 
 function HomePage() {
     return (            
-            <div className='Home'>                            
+            <div className='HomePage'>                            
               {/* ส่วนที่ 1 */}
               < PartOne />
               {/* ส่วนที่ 2 */}

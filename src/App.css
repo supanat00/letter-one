@@ -1,11 +1,24 @@
 .App {
-  text-align: center;
-  
+  min-height: 100%;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
 }
 
 /* Fonts */
@@ -87,43 +100,14 @@
   box-sizing: border-box; /* Include padding in element size */
 }
 
-.App-main {
-  background-color: #F9F8E6;
-  background-image: url('../public/background/bg_paper.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: top; /* ยืดเนื้อหาให้อยู่กลางตามแนวแกนตั้ง */
-  font-size: calc(10px + 2vmin);
-  color: rgb(58, 58, 58);
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: hidden;
-  grid-template-rows: auto 1fr auto;
-}
-
 .HomePage {
-  height: 6838px; /* กำหนดความสูงเท่ากับขนาดของภาพพื้นหลัง */
-  width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
   background-image: url('../public/background/bg_paper.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top; /* ให้ภาพพื้นหลังปรากฏที่ด้านบน */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;  
-  width: 100vw;
-  height: 100vh;
-  max-height: 150vh;
-}
-.Home {
-  width: 100%;
-  height: 100%;
-  text-align: center;
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-size: cover; /* ขยายขนาดภาพเพื่อครอบคลุมพื้นที่ */  
+  background-attachment: scroll;
+  display: block;
+  transform: translate(0);  
 }
 
 .App-link {
@@ -131,158 +115,43 @@
 }
 
 /* CSS ส่วนของ part-1 */
-.part-1 {
-  display: flex;
+.partone {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   flex-direction: column;
-  align-items: center;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
   justify-content: center;
-  padding: 20px; /* ปรับขนาดของพื้นที่ภายใน .part-1 */
-  text-align: center;
-}
-
-.you-are {
+  align-items: center;
+  display: flex;
   position: relative;
-  width: 300px;
-  font-family: 'HeySunsetBrushFont', sans-serif;
-  font-size: 15px;
-  /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
-}
-
-.the-wedding {
-  position: relative;
-  font-family: 'HeySunsetBrushFont', sans-serif;
-  font-size: 15px;
-  /* ปรับแต่งค่าอื่นๆ ตามที่คุณต้องการ */
-}
-
-.part-1 .symbol1 {
-  position: relative;
+  top: 100px;
 }
 
 /* CSS ส่วนของ part-2 */
-.part-2 {  
-  width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
-  display: flex;
+.parttwo {
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center;  
-}
-
-.part-2 .date-time {  
-  width: 250px;
-  text-align: left;
-  position: relative;
-  z-index: 2;  
-}
-
-.date-time p {
-  font-family: 'Silom', sans-serif;
-  font-size: 12px;
-}
-
-.part-2 .hope-you .text4 {
-  position: relative;
   display: flex;
-  width: 300px;
-  left: 20px;
-  z-index: 1;
-  opacity: 0.9;  
-}
-
-.part-2 .long-text {
-  font-family: 'AmericanTypewriter', sans-serif;
-  font-size: 12px;
   position: relative;
-  width: 250px;
-  z-index: 2;  
-  text-align: left;  
+  top: 650px;
 }
-
-.part-2 .dear-people .text3 {
-  width: 140px;
-  position: relative;
-  display: flex;    
-  z-index: 1;  
-}
-
-.part-2 .note1 {  
-  position: relative;
-  font-family: 'AmericanTypewriter', sans-serif;
-  font-size: 8px;
-}
-.symbol2-container .symbol2{
-  position: relative;
-  animation: heartbeat 1.5s infinite;
-}
-
-.symbol3-container .symbol3{
-  position: relative;
-  animation: heartbeat 2s infinite;
-}
-
-.date-time-heading {
-  font-family: 'Silom', sans-serif; /* แทนที่ Your-Font-Family-Name ด้วยชื่อฟอนต์ที่ต้องการ */
-  text-align: left;
-  margin: 0;
-}
-
 
 /* CSS ส่วนของ part-3 */
-.part-3 {  
-  width: 1080px; /* กำหนดความกว้างเท่ากับขนาดของภาพพื้นหลัง */
-  display: flex;
+.partthree {
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center;    
-}
-
-.part-3 .noonut img {
-  position: relative;
   display: flex;
-  width: 350px;  
-  left: 0px;
-  z-index: 50;
-}
-
-.part-3 .picture {
-  position: relative;  
-  display: flex;
-  justify-content: center;  
-  z-index: 2;  
-}
-
-.part-3 .picture img {  
-  z-index: 1;
-}
-
-.pic_m {
   position: relative;
-  z-index: 1;  
+  top: 800px;
+  bottom: 0;
 }
 
-.pic_l {
-  position: relative;
-  z-index: 1;
-}
 
-.pic_r {
-  position: relative;
-  z-index: 1;
-}
-
-.part-3 .map {
-  position: relative;
-}
-
-.part-3 .note-2 {
-  position: relative;
-  
-}
-
-.part-3 .mapbutton {
-  position: relative;  
-}
-
+/* Components */
 .music-loop-button {
   position: fixed;
   top: 10px;
@@ -417,466 +286,252 @@
 /* Responsive Screen Setting */
 
 /* Adding responsive styles for mini screens */
-@media (max-width: 319px) {
-  .App-header {
-    font-size: 20px;
-    /* padding: 10px; */
+@media (max-width: 479px) {
+  .App {
+    -webkit-text-fill-color: inherit;
+    background-image: url('../public/background/bg_paper.jpg');
+    background-position: 0 0;
+    background-size: auto;
+    background-attachment: fixed;
+    background-clip: border-box;
   }
 
-  .App-logo {
-    height: 30vmin;
-  }
-  
-  .welcome-text {
-    font-size: 80px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
-  .waveTextAnimated span {
-      display: inline-block;
-      -webkit-animation: wave-text 1s ease-in-out infinite;
-      animation: wave-text 1s ease-in-out infinite
+  .HomePage {
+    background-image: url('../public/background/bg_paper.jpg');
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-size: cover; /* ขยายขนาดภาพเพื่อครอบคลุมพื้นที่ */  
+    background-attachment: scroll;
+    display: block;
+    transform: translate(0);
   }
 
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
-  }
-
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
-  }
-
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
-  }
-
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
-  }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-
-  .part-1 {
-    margin-top: 0px;
-  }
-
-  .part-1 .symbol1 {    
-    width: 120px;
-    top: 50px;
-  }
- 
-  .part-2 .symbol2 {
-    position: relative;  
-    width: 100px;
-    top: 160px;
-  }
-  .part-2 .date-time {     
-    top: 520px;
-    left: 15px;
-      
-  }  
-  .date-time p {    
-    font-size: 8px;
-  }
-  .part-2 .dear-people .text3 {
-    width: 130px;
-    top: 525px;
-    right: 80px;
-  }
-  .part-2 .long-text {    
-    font-size: 9px;    
-    width: 280px;  
-    top: 570px;
-    margin-left: 30px;
-  }
-  .part-2 .hope-you .text4 {
-    width: 265px;
-    left: 10px;    
-    top: 130px;
-  }
-  .part-2 .note1 {
-    position: absolute;
-    top: 810px;    
-    font-size: 8px;
-  }
-  .part-2 .symbol3 {
-    width: 50px;
+  .you-are {
+    text-align: center;
+    font-family: '';
+    font-size: 15px;
+    display: block;
     position: relative;
-    top: 185px;
+    top: 0;
   }
-  .part-3 .noonut img {
-    width: 260px;  
-    bottom: -220px;   
+
+  .thewedding {
+    z-index: 600;
+    text-align: center;
+    font-family: '';
+    font-weight: 400;
+    position: relative;
+    top: 30px;
   }
-  .part-3 .picture {
-    bottom: -220px;    
-    width: 300px; 
-    gap: 20px; /* ระยะห่างระหว่างภาพ */    
+
+  .image {
+    text-align: left;
+    object-fit: none;
+    position: relative;
   }
-  .part-3 .picture img {
-    width: 255px;    
+
+  .container {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    line-height: 0;
+    transition: opacity .3s;
+    display: flex;
+    position: relative;
+    top: 200px;
+    transform: rotate(0);
   }
-  .part-3 .map {
-    bottom: -250px;
-    width: 250px;  
+
+  .image-2 {
+    text-align: left;
   }
-  .part-3 .note-2 {
-    bottom: -250px;    
+
+  .symbol-one {
+    position: relative;
+    top: 80px;
+  }
+
+  .container-2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .symbol-two {
+    flex: 0 auto;
+    position: relative;
+  }
+
+  .date-time {
+    color: #5c5c5c;
+    text-align: left;
+    flex: 0 auto;
+    font-family: '';
     font-size: 10px;
-  }
-  .part-3 .mapbutton {
-    bottom: -250px;   
-    width: 100px;
-  }
-}
-/* Adding responsive styles for 320 screens */
-@media (min-width: 320px) and (max-width: 479px) {
-  .App-header {
-    font-size: 20px;
-    /* padding: 10px; */
+    font-weight: 400;
+    position: relative;
+    left: -40px;
+    right: 0;
   }
 
-  .App-logo {
-    height: 30vmin;
-  }
-  
-  .welcome-text {
-    font-size: 80px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
-  .waveTextAnimated span {
-      display: inline-block;
-      -webkit-animation: wave-text 1s ease-in-out infinite;
-      animation: wave-text 1s ease-in-out infinite
+  .partone {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-direction: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 100px;
   }
 
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
+  .parttwo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 650px;
   }
 
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
+  .partthree {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 800px;
+    bottom: 0;
   }
 
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
+  .image-3 {
+    position: relative;
+    top: 0;
   }
 
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
+  .paragraph-1 {
+    z-index: 2;
+    direction: ltr;
+    color: #5c5c5c;
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-family: '';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 0;
   }
 
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
+  .image-4 {
+    opacity: 1;
+    position: relative;
+    top: -25px;
+    left: 14px;
   }
 
-}
-
-/* Adding responsive styles for 480 screens */
-@media (min-width: 480px) and (max-width: 599px) {
-  .App-header {
-    font-size: 20px;
-    /* padding: 10px; */
+  .container-3 {
+    position: relative;
+    top: -320px;
   }
 
-  .App-logo {
-    height: 30vmin;
-  }
-  
-  .welcome-text {
-    font-size: 80px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
-  .waveTextAnimated span {
-      display: inline-block;
-      -webkit-animation: wave-text 1s ease-in-out infinite;
-      animation: wave-text 1s ease-in-out infinite
-  }
-
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
+  .paragraph-1-copy {
+    z-index: 2;
+    direction: ltr;
+    color: #5c5c5c;
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 0;
+    font-family: '';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    top: 0;
   }
 
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
+  .note-one {
+    color: #5c5c5c;
+    text-align: center;
+    font-family: '';
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    display: block;
+    position: relative;
+    top: -200px;
   }
 
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
+  .image-5 {
+    position: relative;
+    top: -187px;
   }
 
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
+  .image-6 {
+    z-index: 3;
+    position: relative;
   }
 
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-}
-
-/* Adding responsive styles for 600px screens */
-@media (min-width: 600px) and (max-width: 767px) {
-  .App-header {
-    font-size: 20px;
-    /* padding: 10px; */
+  .picture {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: -220px;
   }
 
-  .App-logo {
-    height: 30vmin;
-  }
-  
-  .welcome-text {
-    font-size: 80px;
-    font-family: 'AuthenticSignatureFont';
+  .pic-m {
+    display: block;
+    position: relative;
   }
 
-  /* อนิเมชั่นตัวอักษรเคลื่อนไหว */
-  .waveTextAnimated span {
-      display: inline-block;
-      -webkit-animation: wave-text 1s ease-in-out infinite;
-      animation: wave-text 1s ease-in-out infinite
+  .pic-l {
+    flex-flow: row;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: absolute;
   }
 
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
+  .pic-r {
+    display: block;
+    position: absolute;
   }
 
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
+  .image-7 {
+    position: relative;
+    top: -320px;
   }
 
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
+  .text-block {
+    color: #5c5c5c;
+    font-family: "";
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    position: relative;
+    top: -310px;
   }
 
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
+  .image-8 {    
+    cursor: pointer;
+    position: relative;
+    top: -300px;
   }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-}
-
-/* Adding responsive styles for 768px */
-@media (min-width: 768px) and (max-width: 899px) {
-  .App-header {
-    font-size: 36px;
-    padding: 40px;
-  }
-
-  .App-logo {
-    height: 45vmin;
-  }
-  
-  .welcome-text {
-    font-size: 300px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  .waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-    animation: wave-text 1s ease-in-out infinite
-  }
-
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
-  }
-
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
-  }
-
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
-  }
-
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
-  }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-  
-}
-
-/* Adding responsive styles for 900px */
-@media (min-width: 900px) and (max-width: 1023px) {
-  .App-header {
-    font-size: 36px;
-    padding: 40px;
-  }
-
-  .App-logo {
-    height: 45vmin;
-  }
-  
-  .welcome-text {
-    font-size: 300px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  .waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-    animation: wave-text 1s ease-in-out infinite
-  }
-
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
-  }
-
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
-  }
-
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
-  }
-
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
-  }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-  
-}
-
-/* Adding responsive styles for 1024px */
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .App-header {
-    font-size: 36px;
-    padding: 40px;
-  }
-
-  .App-logo {
-    height: 45vmin;
-  }
-  
-  .welcome-text {
-    font-size: 300px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  .waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-    animation: wave-text 1s ease-in-out infinite
-  }
-
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
-  }
-
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
-  }
-
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
-  }
-
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
-  }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-  
-}
-
-/* Adding responsive styles for 1200px */
-@media (min-width: 1200px) {
-  .App-header {
-    font-size: 36px;
-    padding: 40px;
-  }
-
-  .App-logo {
-    height: 45vmin;
-  }
-  
-  .welcome-text {
-    font-size: 300px;
-    font-family: 'AuthenticSignatureFont';
-  }
-
-  .waveTextAnimated span {
-    display: inline-block;
-    -webkit-animation: wave-text 1s ease-in-out infinite;
-    animation: wave-text 1s ease-in-out infinite
-  }
-
-  .waveTextAnimated span:nth-of-type(1) {
-      -webkit-animation-delay: .2s;
-      animation-delay: .2s
-  }
-
-  .waveTextAnimated span:nth-of-type(2) {
-      -webkit-animation-delay: .3s;
-      animation-delay: .3s
-  }
-
-  .waveTextAnimated span:nth-of-type(3) {
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s
-  }
-
-  .waveTextAnimated span:nth-of-type(4) {
-      -webkit-animation-delay: .5s;
-      animation-delay: .5s
-  }
-
-  .waveTextAnimated span:nth-of-type(5) {
-      -webkit-animation-delay: .6s;
-      animation-delay: .6s
-  }
-  
 }
