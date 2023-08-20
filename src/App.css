@@ -253,6 +253,17 @@ img {
   }
 }
 
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 150px;
+  }
+  100% {
+    background-position: 100px;
+  }
+}
 
 /* Adding WaveText */
 @-webkit-keyframes wave-text {
@@ -376,7 +387,7 @@ img {
 
   
 
-  .you-are {
+  .HomePage .partone .you-are {
     text-align: center;
     font-family: 'AmericanTypewriter';
     font-weight: 535;
@@ -384,15 +395,23 @@ img {
     display: block;
     position: relative;
     top: 25px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
   }
 
-  .thewedding {
+  .HomePage .partone .thewedding {
     z-index: 600;
     text-align: center;
     font-family: 'Silom';
     font-weight: 500;
     position: relative;
     top: 30px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
   }
 
   .image {
