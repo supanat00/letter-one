@@ -65,6 +65,47 @@ img {
 .App-link {
   color: #61dafb;
 }
+/* Splash Screen */
+/* Add your preferred background image or color */
+.App-splash {
+  background-image: url('../public/background/background.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Add animation keyframes for text */
+@keyframes waveAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply animation to text */
+.waveTextAnimated span {
+  display: inline-block;
+  font-size: 4rem;
+  margin: 0.2rem;
+  transform: translateY(0);
+  animation: waveAnimation 0.5s ease-in-out infinite;
+}
+
+/* Style for the welcome-text */
+.welcome-text {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 /* CSS ส่วนของ part-1 */
 .partone {
