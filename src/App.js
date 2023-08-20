@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { HomePage, Tester } from './pages';
+import { HomePage, Tester, SplashScreen } from './pages';
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
       {/* เริ่มต้นแอปพลิเคชัน */}
         <Routes>
             {/* หน้าหลัก */}
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<SplashScreen />} />
+
+            <Route path="/HomePage" element={<HomePage />} />
             
             {/* หน้าทดสอบ */}
             <Route path="/Tester" element={<Tester />} />
