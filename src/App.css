@@ -653,13 +653,23 @@ img {
   }
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงตำแหน่งแสดงรูป */
-.picture.active .pic-l,
-.picture.active .pic-m,
-.picture.active .pic-r {
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 1s ease, opacity 1s ease;
-}
+  .picture.active .pic-l {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 4s;
+  }
+  
+  .picture.active .pic-m {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 3s; /* ให้ .pic-m เริ่มเลื่อนเข้ามาช้ากว่า .pic-l */
+  }
+  
+  .picture.active .pic-r {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 5s; /* ให้ .pic-r เริ่มเลื่อนเข้ามาช้ากว่า .pic-l และ .pic-m */
+  }
 
 /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
 .image-7.active {
@@ -696,7 +706,7 @@ img {
   .HomePage .partthree .text-block.active {
     opacity: 1;
     transform: translateX(0);
-    animation: typing 18s steps(150, end) forwards;
+    animation: typing 10s steps(150, end) forwards;
   }
 
   .image-8 {    
