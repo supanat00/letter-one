@@ -7,7 +7,7 @@ function AutoScroll() {
   useEffect(() => {
     if (isScrolling) {
       let startTime = null;
-      const duration = 30000; // 30 วินาที
+      const duration = 45000; // 45 วินาที
       const startY = window.scrollY;
       const endY = document.body.scrollHeight - window.innerHeight;
       
