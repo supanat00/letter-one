@@ -281,22 +281,24 @@ img {
     flex-direction: column; /* จัดเรียงแนวตั้ง */
     align-items: center; /* จัดกึ่งกลางแนวนอน */
   }
+
   
 
   .you-are {
     text-align: center;
-    font-family: '';
+    font-family: 'AuthenticSignature';
+    font-weight: 700;
     font-size: 15px;
     display: block;
     position: relative;
-    top: 0;
+    top: 15px;
   }
 
   .thewedding {
     z-index: 600;
     text-align: center;
-    font-family: '';
-    font-weight: 400;
+    font-family: 'AuthenticSignature';
+    font-weight: 700;
     position: relative;
     top: 30px;
   }
@@ -340,6 +342,7 @@ img {
   }
 
   .symbol-two {
+    animation: heartbeat 1s infinite;
     flex: 0 auto;
     position: relative;
   }
@@ -367,7 +370,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 100px;
+    top: 200px;
   }
 
   .parttwo {
@@ -376,7 +379,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 650px;
+    top: 700px;
   }
 
   .partthree {
@@ -454,6 +457,7 @@ img {
   }
 
   .image-5 {
+    animation: heartbeat 1s infinite;
     position: relative;
     top: -187px;
   }
