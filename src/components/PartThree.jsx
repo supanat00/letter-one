@@ -70,7 +70,16 @@ function PartThree () {
       </div>
       </div>
 
-      <img src={mapbutton} className={`image-8 ${isTextVisible ? 'active' : ''}`} alt="logo" />
+      {isTextVisible && (
+  <a
+    href="https://www.google.com/maps/place/276+Soi+Rama+IX+17,+Bang+Kapi,+Huai+Khwang,+Bangkok+10310"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={mapbutton} className={`image-8 active`} alt="logo" />
+  </a>
+)}
+
 
     </div>
   );

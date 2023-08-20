@@ -727,7 +727,7 @@ img {
   .HomePage .partthree .text-block.active {
     opacity: 1;
     transform: translateX(0);
-    animation: typing 10s steps(150, end) forwards;
+    animation: typing 15s steps(200, end) forwards;
     transition-delay: 3s;
   }
 
