@@ -141,6 +141,8 @@ img {
   position: relative;
   top: 800px;
   bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 
@@ -634,6 +636,8 @@ img {
   .pic-m {
     display: block;
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
     transform: translateY(50px);
     opacity: 0;
     transition: transform 3.5s ease, opacity 5s ease;
@@ -646,6 +650,8 @@ img {
     align-items: center;
     display: block;
     position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
     transform: translateX(-50px);
     opacity: 0;
     transition: transform 4.5s ease, opacity 5s ease;
@@ -654,6 +660,8 @@ img {
   .pic-r {
     display: block;
     position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
     transform: translateX(50px);
     opacity: 0;
     transition: transform 5.5s ease, opacity 5s ease;
@@ -664,7 +672,7 @@ img {
     top: -320px;
     transform: translateX(0);
     opacity: 0;
-    transition: transform 15s ease, opacity 15s ease;
+    transition: transform 13s ease, opacity 10s ease;
   }
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงตำแหน่งแสดงรูป */
@@ -695,7 +703,7 @@ img {
 .image-7.active {
   transform: translateY(0);
   opacity: 1;
-  transition-delay: 10s;  
+  transition-delay: 13s;  
 }
 
 
