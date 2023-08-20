@@ -1,46 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Scrollbutton from '../icon/scroll-down.svg';
 
 function AutoScroll() {
-  const [isScrolling, setIsScrolling] = useState(true);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const scrollStep = 1; // ขั้นตอนการเลื่อน
+  const scrollInterval = 20; // ช่วงเวลาเลื่อน (มิลลิวินาที)
+
+  const handleScroll = () => {
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+      setIsAutoScrolling(false);
+    } else {
+      setIsAutoScrolling(true);
+    }
+  };
 
   useEffect(() => {
-    if (isScrolling) {
-      let startTime = null;
-      const duration = 45000; // 45 วินาที
-      const startY = window.scrollY;
-      const endY = document.body.scrollHeight - window.innerHeight;
-      
-      const animateScroll = (timestamp) => {
-        if (!startTime) startTime = timestamp;
-        const progress = timestamp - startTime;
-        const scrollPercentage = Math.min(1, progress / duration);
-        const targetScrollY = startY + (endY - startY) * scrollPercentage;
-        window.scrollTo(0, targetScrollY);
+    window.addEventListener('scroll', handleScroll);
 
-        if (scrollPercentage < 1) {
-          requestAnimationFrame(animateScroll);
-        } else {
-          setIsScrolling(false);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const autoScrollRef = useRef();
+  useEffect(() => {
+    if (isAutoScrolling) {
+      autoScrollRef.current = setInterval(() => {
+        window.scrollBy(0, scrollStep);
+
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+          clearInterval(autoScrollRef.current);
+          setIsAutoScrolling(false);
         }
+      }, scrollInterval);
+
+      return () => {
+        clearInterval(autoScrollRef.current);
       };
-
-      requestAnimationFrame(animateScroll);
     }
-  }, [isScrolling]);
+  }, [isAutoScrolling]);
 
-  const toggleScroll = () => {
-    setIsScrolling(!isScrolling);
+  const toggleAutoScroll = () => {
+    setIsAutoScrolling(!isAutoScrolling);
   };
 
   return (
     <div className="auto-scroll">
       {/* Auto Scroll Button */}
       <button
-        className={`auto-scroll-button ${isScrolling ? 'scrolling' : ''}`}
-        onClick={toggleScroll}
+        className={`auto-scroll-button ${isAutoScrolling ? 'scrolling' : ''}`}
+        onClick={toggleAutoScroll}
       >
-        <img src={Scrollbutton} alt={isScrolling ? 'Pause' : 'Play'} />
+        <img src={Scrollbutton} alt={isAutoScrolling ? 'Pause' : 'Play'} 
+        className={`scroll-icon ${isAutoScrolling ? 'spinning' : ''}`}/>
       </button>
     </div>
   );
