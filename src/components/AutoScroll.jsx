@@ -2,29 +2,36 @@ import React, { useState, useEffect } from 'react';
 import Scrollbutton from '../icon/scroll-down.svg';
 
 function AutoScroll() {
-  const [isScrolling, setIsScrolling] = useState(true); // เริ่มต้นเลื่อนหน้าจอ
-
-  const toggleScroll = () => {
-    setIsScrolling(!isScrolling);
-  };
+  const [isScrolling, setIsScrolling] = useState(true);
 
   useEffect(() => {
     if (isScrolling) {
-      const smoothScroll = () => {
-        const currentScroll = window.scrollY;
-        const targetScroll = currentScroll + 1;
-        window.scrollTo(0, targetScroll);
+      let startTime = null;
+      const duration = 30000; // 30 วินาที
+      const startY = window.scrollY;
+      const endY = document.body.scrollHeight - window.innerHeight;
+      
+      const animateScroll = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const scrollPercentage = Math.min(1, progress / duration);
+        const targetScrollY = startY + (endY - startY) * scrollPercentage;
+        window.scrollTo(0, targetScrollY);
 
-        if (targetScroll < document.body.scrollHeight) {
-          requestAnimationFrame(smoothScroll);
+        if (scrollPercentage < 1) {
+          requestAnimationFrame(animateScroll);
         } else {
           setIsScrolling(false);
         }
       };
 
-      smoothScroll();
+      requestAnimationFrame(animateScroll);
     }
   }, [isScrolling]);
+
+  const toggleScroll = () => {
+    setIsScrolling(!isScrolling);
+  };
 
   return (
     <div className="auto-scroll">
@@ -33,7 +40,7 @@ function AutoScroll() {
         className={`auto-scroll-button ${isScrolling ? 'scrolling' : ''}`}
         onClick={toggleScroll}
       >
-        <img src={Scrollbutton} alt={isScrolling ? 'Scroll Up' : 'Scroll Down'} />
+        <img src={Scrollbutton} alt={isScrolling ? 'Pause' : 'Play'} />
       </button>
     </div>
   );
