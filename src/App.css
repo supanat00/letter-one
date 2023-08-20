@@ -464,11 +464,11 @@ img {
     color: #5c5c5c;
     text-align: left;
     flex: 0 auto;
-    font-family: '';
-    font-size: 10px;
-    font-weight: 400;
+    font-family: 'AmericanTypewriter';
+    font-size: 11px;
+    font-weight: 700;
     position: relative;
-    left: -40px;
+    left: -45px;
     right: 0;
   }
 
@@ -517,19 +517,19 @@ img {
     text-align: left;
     text-transform: none;
     margin-bottom: 0;
-    padding-top: 10px;
-    font-family: '';
-    font-size: 10px;
+    padding-top: 0px;
+    font-family: 'AmericanTypewriter';
+    font-size: 11px;
     font-weight: 700;
     line-height: 15px;
     text-decoration: none;
     display: block;
     position: relative;
-    top: 0;
+    top: 0;    
   }
 
   .image-4 {
-    opacity: 1;
+    opacity: 0.8;
     position: relative;
     top: -25px;
     left: 14px;
@@ -537,7 +537,7 @@ img {
 
   .container-3 {
     position: relative;
-    top: -320px;
+    top: -340px;
   }
 
   .paragraph-1-copy {
@@ -547,7 +547,7 @@ img {
     text-align: left;
     text-transform: none;
     margin-bottom: 0;
-    font-family: '';
+    font-family: 'AmericanTypewriter';
     font-size: 10px;
     font-weight: 700;
     line-height: 15px;
@@ -560,7 +560,7 @@ img {
   .note-one {
     color: #5c5c5c;
     text-align: center;
-    font-family: '';
+    font-family: 'AmericanTypewriter';
     font-size: 10px;
     font-weight: 700;
     line-height: 15px;
@@ -615,7 +615,7 @@ img {
 
   .text-block {
     color: #5c5c5c;
-    font-family: "";
+    font-family: "AmericanTypewriter";
     font-size: 10px;
     font-weight: 700;
     line-height: 15px;
