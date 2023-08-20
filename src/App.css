@@ -707,6 +707,7 @@ img {
     opacity: 1;
     transform: translateX(0);
     animation: typing 10s steps(150, end) forwards;
+    transition-delay: 3s;
   }
 
   .image-8 {    
