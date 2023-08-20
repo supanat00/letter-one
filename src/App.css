@@ -287,8 +287,8 @@ img {
   .you-are {
     text-align: center;
     font-family: '';
-    font-weight:lighter;
-    font-size: 15px;
+    font-weight: bold;
+    font-size: 12px;
     display: block;
     position: relative;
     top: 15px;
