@@ -619,7 +619,7 @@ img {
     position: relative;
     transform: translateX(0);
     opacity: 0;
-    transition: transform 15s ease, opacity 10s ease;
+    transition: transform 15s ease, opacity 15s ease;
   }
 
   .picture {
@@ -664,7 +664,7 @@ img {
     top: -320px;
     transform: translateX(0);
     opacity: 0;
-    transition: transform 1s ease, opacity 10s ease;
+    transition: transform 15s ease, opacity 15s ease;
   }
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงตำแหน่งแสดงรูป */
@@ -690,12 +690,12 @@ img {
 .image-6.active {
   transform: translateY(0);
   opacity: 1;
-  transition-delay: 8s;
+  transition-delay: 9.5s;
 }
 .image-7.active {
   transform: translateY(0);
   opacity: 1;
-  transition-delay: 8.5s;  
+  transition-delay: 10s;  
 }
 
 
