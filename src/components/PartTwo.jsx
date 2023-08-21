@@ -8,20 +8,21 @@ import { motion, useAnimation } from 'framer-motion';
 function PartTwo ()  {  
   const controls = useAnimation();
 
-  const handleScroll = () => {
-    const yOffset  = window.pageYOffset;
-
-    if (yOffset >= 200 )  {
+  const handleScroll = React.useCallback(() => {
+    const yOffset = window.pageYOffset;
+  
+    if (yOffset >= 250) {
       controls.start({ scale: 1, opacity: 1 });
     } else {
       controls.start({ scale: 0, opacity: 0 });
     }
-  };
-
+  }, [controls]);
+  
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [handleScroll]);
+  
 
   return (
     <div className='parttwo'>
