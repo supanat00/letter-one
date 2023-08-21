@@ -679,7 +679,7 @@ img {
 .image-6.active {
   transform: translateY(0);
   opacity: 1;
-  transition-delay: 5.5s;
+  transition-delay: 3.5s;
 }
 
   .text-block {
