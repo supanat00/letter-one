@@ -6,11 +6,18 @@ import pic_m from '../icon/pic_m.png';
 import pic_l from '../icon/pic_l.png';
 import pic_r from '../icon/pic_r.png';
 
-function PartThree () {  
+function PartThree () {
+  const [isNongnutVisible, setIsNongnutVisible] = useState(false);
   const [isImageVisible, setIsImageVisible] = useState(false);  
 
   useEffect(() => {
-    const handleScroll = () => {     
+    const handleScroll = () => {
+      const nongnutElement = document.querySelector('.image-6');
+      if (nongnutElement) {
+        const rect = nongnutElement.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setIsNongnutVisible(isVisible);
+      }
 
       const element = document.querySelector('.picture');
       if (element) {
@@ -30,7 +37,7 @@ function PartThree () {
   return (
     <div className='partthree'>
               
-      <img src={text5} className='image-6' alt="logo" />
+      <img src={text5} className={`image-6 ${isNongnutVisible ? 'active' : ''}`} alt="logo" />
 
       <div className={`w-layout-blockcontainer picture w-container ${isImageVisible ? 'active' : ''}`}>
         <img src={pic_l} alt="" className="pic-l"/>
