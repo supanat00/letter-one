@@ -601,9 +601,11 @@ img {
   .image-6 {
     z-index: 3;
     position: relative;
-    transform: translateX(0);
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(200px);    
     opacity: 0;
-    transition: transform 1s ease, opacity 5s ease;
+    transition: transform 1s ease, opacity 3s ease;
   }
 
   .picture {
@@ -677,7 +679,7 @@ img {
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
   .image-6.active {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     transition-delay: 3.5s;
   }
