@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import symbol2 from '../icon/symbol_2.png';
 import symbol3 from '../icon/symbol_3.png';
 import text3 from '../icon/dear_people_we_love.png';
@@ -10,15 +10,16 @@ function PartTwo ()  {
 
   const handleScroll = () => {
     const yOffset = window.pageYOffset;
+    const windowHeight = window.innerHeight;
 
-    if (yOffset >= 200) {
+    if (yOffset >= 200 && yOffset <= windowHeight - 200) {
       controls.start({ scale: 1, opacity: 1 });
     } else {
       controls.start({ scale: 0, opacity: 0 });
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
