@@ -235,6 +235,15 @@ img {
   }
 }
 
+@keyframes revealImage {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -594,10 +603,10 @@ img {
     z-index: 3;
     position: relative;
     overflow: hidden;
-    white-space: nowrap;
-    transform: translateY(-200px);    
+    width: 0px; 
     opacity: 0;
-    transition: transform 1s ease, opacity 3s ease;
+    width: 0;         
+    animation: revealImage 3s steps(50, end) forwards;
   }
 
   .picture {
@@ -670,8 +679,7 @@ img {
   }
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
-  .image-6.active {
-    transform: translateX(0);
+  .image-6.active {    
     opacity: 1;
     transition-delay: 3.5s;
   }
