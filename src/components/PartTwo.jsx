@@ -3,8 +3,25 @@ import symbol2 from '../icon/symbol_2.png';
 import symbol3 from '../icon/symbol_3.png';
 import text3 from '../icon/dear_people_we_love.png';
 import text4 from '../icon/hope_you_all_make_it.png';
+import { motion, useAnimation } from 'framer-motion';
 
 function PartTwo ()  {  
+  const controls = useAnimation();
+
+  const handleScroll = () => {
+    const yOffset = window.pageYOffset;
+
+    if (yOffset >= 200) {
+      controls.start({ scale: 1, opacity: 1 });
+    } else {
+      controls.start({ scale: 0, opacity: 0 });
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className='parttwo'>
@@ -19,7 +36,14 @@ function PartTwo ()  {
 
       <img src={text3} className='image-3' alt="logo" />
 
-      <img src={text4} className='image-4' alt="logo" />
+      <motion.img
+        src={text4}
+        className='image-4'
+        alt='logo'
+        initial={{ scale: 1, opacity: 0.5 }}
+        animate={controls}
+        transition={{ duration: 0.5 }}
+      />
 
       <div className="w-layout-blockcontainer container-3 w-container">
 

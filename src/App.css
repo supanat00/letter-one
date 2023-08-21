@@ -675,12 +675,12 @@ img {
     transition-delay: 2.5s; /* ให้ .pic-r เริ่มเลื่อนเข้ามาช้ากว่า .pic-l และ .pic-m */
   }
 
-/* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
-.image-6.active {
-  transform: translateY(0);
-  opacity: 1;
-  transition-delay: 3.5s;
-}
+  /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
+  .image-6.active {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 3.5s;
+  }
 
   .text-block {
     text-align: center;
