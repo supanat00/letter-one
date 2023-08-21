@@ -8,9 +8,7 @@ import pic_r from '../icon/pic_r.png';
 
 function PartThree () {
   const [isNongnutVisible, setIsNongnutVisible] = useState(false);
-  const [isImageVisible, setIsImageVisible] = useState(false);
-  const [isMapVisible, setIsMapVisible] = useState(false);
-  const [isTextVisible, setIsTextVisible] = useState(false);
+  const [isImageVisible, setIsImageVisible] = useState(false);  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,21 +24,7 @@ function PartThree () {
         const rect = element.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
         setIsImageVisible(isVisible);
-      }
-
-      const mapElement = document.querySelector('.image-7');
-      if (mapElement) {
-        const rect = mapElement.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-        setIsMapVisible(isVisible);
-      }
-
-      const textBlockElement = document.querySelector('.text-block');
-      if (textBlockElement) {
-        const rect = textBlockElement.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-        setIsTextVisible(isVisible);
-      }
+      }      
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -61,24 +45,24 @@ function PartThree () {
         <img src={pic_r} alt="" className="pic-r"/>
       </div>
       
-      <img src={map} className={`image-7 ${isImageVisible ? 'active' : ''}`} alt="logo" />
+      <img src={map} className="image-7"  alt="logo" />
 
-      <div className='w-layout-blockcontainer container-3 w-container'>      
-      <div className={`text-block ${isMapVisible ? 'active' : ''}`}>
+          
+      <div className='text-block' >
         Place: Rin at Raintree - Sai Hall
         <br />2 276 soi RAMA IX 17, Bang Kapi, Huai Khwang, Bangkok 10310
       </div>
-      </div>
+      
 
-      {isTextVisible && (
+     
   <a
     href="https://www.google.com/maps/place/276+Soi+Rama+IX+17,+Bang+Kapi,+Huai+Khwang,+Bangkok+10310"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img src={mapbutton} className={`image-8 active`} alt="logo" />
+    <img src={mapbutton} className="image-8" alt="logo" />
   </a>
-)}
+
 
 
     </div>

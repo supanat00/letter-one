@@ -2,35 +2,30 @@ import React, { useState, useEffect, useRef } from 'react';
 import Scrollbutton from '../icon/scroll-down.svg';
 
 function AutoScroll() {
-  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(false);
   const scrollStep = 1; // ขั้นตอนการเลื่อน
   const scrollInterval = 20; // ช่วงเวลาเลื่อน (มิลลิวินาที)
 
   const handleScroll = () => {
-    if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
-      setIsAutoScrolling(false);
-    } else {
-      setIsAutoScrolling(true);
+    if (isAutoScrolling) {
+      window.scrollBy(0, scrollStep);
+
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        setIsAutoScrolling(false);
+      }
     }
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
 
   const autoScrollRef = useRef();
   useEffect(() => {
     if (isAutoScrolling) {
       autoScrollRef.current = setInterval(() => {
-        window.scrollBy(0, scrollStep);
+        handleScroll();
 
         if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
           clearInterval(autoScrollRef.current);
-          setIsAutoScrolling(false);
         }
       }, scrollInterval);
 
