@@ -646,7 +646,7 @@ img {
     white-space: nowrap;
     transform: translateX(150px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
   }
 
   .image-7 {
@@ -660,19 +660,19 @@ img {
   .picture.active .pic-l {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 3.5s;
+    transition-delay: 2s;
   }
   
   .picture.active .pic-m {
     transform: translateX(0);
     opacity: 1;
-    transition-delay: 3s; /* ให้ .pic-m เริ่มเลื่อนเข้ามาช้ากว่า .pic-l */
+    transition-delay: 1.5s; /* ให้ .pic-m เริ่มเลื่อนเข้ามาช้ากว่า .pic-l */
   }
   
   .picture.active .pic-r {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: 4s; /* ให้ .pic-r เริ่มเลื่อนเข้ามาช้ากว่า .pic-l และ .pic-m */
+    transition-delay: 2.5s; /* ให้ .pic-r เริ่มเลื่อนเข้ามาช้ากว่า .pic-l และ .pic-m */
   }
 
 /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
