@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import symbol2 from '../icon/symbol_2.png';
 import symbol3 from '../icon/symbol_3.png';
 import text3 from '../icon/dear_people_we_love.png';
 import text4 from '../icon/hope_you_all_make_it.png';
-import { motion, useAnimation } from 'framer-motion';
 
-function PartTwo ()  {  
-  const controls = useAnimation();
+function PartTwo ()  {
+  
+  const [isHopeyouVisible, setIsHopeyouVisible] = useState(false);
+  
 
-  const handleScroll = React.useCallback(() => {
-    const yOffset = window.pageYOffset;
-  
-    if (yOffset >= 250) {
-      controls.start({ scale: 1, opacity: 1 });
-    } else {
-      controls.start({ scale: 0, opacity: 0 });
-    }
-  }, [controls]);
-  
-  React.useEffect(() => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const HopeyouElement = document.querySelector('.image-4');
+      if (HopeyouElement) {
+        const rect = HopeyouElement.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        setIsHopeyouVisible(isVisible);
+      }
+      
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [handleScroll]);
-  
+    handleScroll(); // Check visibility when component mounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className='parttwo'>
@@ -37,14 +40,7 @@ function PartTwo ()  {
 
       <img src={text3} className='image-3' alt="logo" />
 
-      <motion.img
-        src={text4}
-        className='image-4'
-        alt='logo'
-        initial={{ scale: 1, opacity: 0.5 }}
-        animate={controls}
-        transition={{ duration: 0.5 }}
-      />
+      <img src={text4} alt="logo" className={`image-4 ${isHopeyouVisible ? 'active' : ''}`} />
 
       <div className="w-layout-blockcontainer container-3 w-container">
 

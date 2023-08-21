@@ -552,10 +552,15 @@ img {
   }   
 
   .image-4 {
-    opacity: 0.8;
+    opacity: 0.6;
     position: relative;
     top: -25px;
     left: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
   }
 
   .container-3 {
@@ -603,10 +608,10 @@ img {
     z-index: 3;
     position: relative;
     overflow: hidden;
-    width: 0px; 
+    white-space: nowrap;    
     opacity: 0;
-    width: 0;         
-    animation: revealImage 3s steps(50, end) forwards;
+    overflow: hidden;
+    transition: opacity 2.5s ease;
   }
 
   .picture {
@@ -682,6 +687,12 @@ img {
   .image-6.active {    
     opacity: 1;
     transition-delay: 3.5s;
+  }
+
+  .image-4.active {
+    transform: translateX(0); /* นำภาพกลับไปให้อยู่ตำแหน่งปกติ */
+    opacity: 1;
+    transition-delay: 1s;
   }
 
   .text-block {
