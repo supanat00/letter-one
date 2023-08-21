@@ -588,14 +588,8 @@ img {
     line-height: 15px;
     display: block;
     position: relative;
-    top: -200px;    
-  }
-
-  .note-one.active {
-    opacity: 1; /* เปลี่ยนค่าเพื่อให้เอฟเฟ็กต์เริ่มแสดงผล */
-    transform: translateX(0); /* ขยับกลับมาอยู่ที่จุดเริ่มต้น */     
-    animation: typing 20s steps(150, end) forwards, flicker 1.5s infinite; /* เพิ่ม animation การพิมพ์ */
-    
+    top: -200px;   
+    animation: flicker 1.5s infinite;
   }
 
   .image-5 {
@@ -626,7 +620,7 @@ img {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
-    transform: translateY(150px);
+    transform: translateY(200px);
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
   }
@@ -652,7 +646,7 @@ img {
     white-space: nowrap;
     transform: translateX(150px);
     opacity: 0;
-    transition: transform 3s ease, opacity 1s ease;
+    transition: transform 2s ease, opacity 1s ease;
   }
 
   .image-7 {
@@ -700,6 +694,7 @@ img {
     top: -300px;
     left: -150px;
     width: 0;    
+    animation: flicker 2s infinite;
   }
   .image-8 {    
     width: 150px;
