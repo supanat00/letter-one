@@ -44,9 +44,7 @@ function PartTwo ()  {
 			delay: function (el, i) {
 			  return i * 200;
 			},
-			fill: "#f16622",
-			stroke: "#F16622",
-			strokeWidth: 1,
+			fill: "#f16622",			
 			complete: function () {
 			  anime({
 				targets: "svg.seeyah path",
