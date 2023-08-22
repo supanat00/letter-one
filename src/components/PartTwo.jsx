@@ -31,26 +31,30 @@ function PartTwo ()  {
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutCubic",
         duration: 1000,
-        
         delay: function (el, i) {
           return i * 200;
         },
         fill: "#f16622",
-            
-      });
-
-      anime({
-      targets: "svg.seeyah path",
-      strokeDashoffset: [anime.setDashoffset, 0],
-      easing: "easeInOutCubic",
-      duration: 400,
-      fill: "#050505",
-      delay: function (el, i) {
-        return i * 100;
-      },            
+        complete: function() {
+          anime({
+            targets: "svg.seeyah path",
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: "easeInOutCubic",
+            duration: 400,
+            fill: "#050505",
+            delay: function (el, i) {
+              return i * 100;
+            },
+            begin: function() {
+              anime.set("svg.seeyah path", { opacity: 1 });
+            }
+          }).play(); // เริ่มเล่น animation ของ "svg.seeyah path"
+        }
       });
     }
   }, [isHopeyouVisible]);
+  
+  
   
 
   return (
