@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import anime from "animejs";
-import map from '../icon/map.png';
-import mapbutton from '../icon/map_button.png';
+import map from '../icon/map.svg';
+import mapbutton from '../icon/map_button.svg';
 import pic_m from '../icon/pic_m.png';
 import pic_l from '../icon/pic_l.png';
 import pic_r from '../icon/pic_r.png';

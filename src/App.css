@@ -523,11 +523,12 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 600px;
+    top: 500px;
     bottom: 0;
   }
 
   .image-3 {
+    width: 210px;
     position: relative;
     top: 0;
   }
@@ -598,14 +599,15 @@ img {
     line-height: 15px;
     display: block;
     position: relative;
-    top: -200px;   
+    top: -300px;   
     animation: flicker 1.5s infinite;
   }
 
   .image-5 {
     animation: heartbeat 1s infinite;
+    width: 80px;
     position: relative;
-    top: -187px;
+    top: -280px;
   }
 
   .image-6 {
@@ -662,7 +664,7 @@ img {
 
   .image-7 {
     position: relative;
-    top: -320px;
+    top: -350px;
     transform: translateX(0);
     opacity: 1;    
   }
@@ -695,16 +697,16 @@ img {
     line-height: 15px;
     display: block;
     position: relative;    
-    top: -300px;
+    top: -350px;
     left: -150px;
     width: 0;    
     animation: flicker 2s infinite;
   }
-  .image-8 {    
+  a img.image-8 {    
     width: 150px;
     cursor: pointer;
     position: relative;
-    top: -280px;
+    top: -320px;
     animation: heartbeat 1s infinite;
   }
 }
