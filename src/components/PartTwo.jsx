@@ -35,16 +35,19 @@ function PartTwo ()  {
           return i * 200;
         },
         fill: "#f16622",
+		stroke: '#F16622',
         complete: function() {
           anime({
             targets: "svg.seeyah path",
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: "easeInOutCubic",
             duration: 400,
-            fill: "#050505",
+            
             delay: function (el, i) {
               return i * 100;
             },
+			fill: "#050505",
+			stroke: "#050505",
             begin: function() {
               anime.set("svg.seeyah path", { opacity: 1 });
             }
@@ -73,7 +76,7 @@ function PartTwo ()  {
       {/* Hope-you */}
       <svg
           viewBox="0 0 580 433.01"
-          style={{ fill: "none", stroke: "#F16622", strokeWidth: 1 }}
+          style={{ fill: "none", stroke: "none", strokeWidth: 1 }}
           className={`image-4 ${isHopeyouVisible ? 'active' : ''}`}
         >
         <g>
@@ -642,7 +645,7 @@ function PartTwo ()  {
       {/* see-yah */}
       <svg
           viewBox="0 0 394.62 203.3"
-          style={{ fill: "none", stroke: "#050505", strokeWidth: 1 }}
+          style={{ fill: "none", stroke: "none", strokeWidth: 1 }}
           className={`seeyah ${isHopeyouVisible ? 'active' : ''}`}
         >
           <g id="paper">

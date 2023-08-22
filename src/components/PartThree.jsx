@@ -22,7 +22,7 @@ function PartThree () {
       const element = document.querySelector('.picture');
       if (element) {
         const rect = element.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 10;
         setIsImageVisible(isVisible);
       }      
     };
@@ -35,8 +35,8 @@ function PartThree () {
   }, []);
 
   useEffect(() => {
-    if (isNongnutVisible) {
-      anime({
+    if (isNongnutVisible) {      
+      anime({           
         targets: "svg.image-6 path",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutCubic",
@@ -48,6 +48,7 @@ function PartThree () {
       });
     }
   }, [isNongnutVisible]);
+  
 
 
   return (
