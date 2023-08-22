@@ -336,7 +336,7 @@ img {
 /* Adding responsive styles for mini screens */
 @media (max-width: 479px) {
   .App {
-    background-image: url('../public/background/bg_paper.jpg');
+    background-image: url('../public/background/bg_paper.png');
     background-position: 0 0;
     background-size: auto;
     background-attachment: fixed;
@@ -402,7 +402,7 @@ img {
   }
   
   .HomePage {
-    background-image: url('../public/background/bg_paper.jpg');
+    background-image: url('../public/background/bg_paper.png');
     background-position: top center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -514,7 +514,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 700px;    
+    top: 550px;    
   }
 
   .partthree {
@@ -523,7 +523,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 800px;
+    top: 600px;
     bottom: 0;
   }
 
@@ -551,21 +551,16 @@ img {
     
   }   
 
-  .image-4 {
-    opacity: 0.6;
+  .image-4 {    
     position: relative;
-    top: -25px;
-    left: 14px;
+    top: -25px;    
     overflow: hidden;
-    white-space: nowrap;
-    transform: translateX(150px);
-    opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
+    white-space: nowrap;      
   }
 
   .container-3 {
     position: relative;
-    top: -340px;
+    top: -290px;
   }
 
   .paragraph-1-copy {
@@ -610,8 +605,7 @@ img {
     overflow: hidden;
     white-space: nowrap;    
     opacity: 0;
-    overflow: hidden;
-    transition: opacity 2.5s ease;
+    overflow: hidden;    
   }
 
   .picture {
@@ -684,15 +678,12 @@ img {
   }
 
   /* เพิ่มการแสดงผลและเอฟเฟคเมื่อมีการเลื่อนมาถึงแผนที่ */
-  .image-6.active {    
-    opacity: 1;
-    transition-delay: 3.5s;
+  .image-6.active {   
+    opacity: 1;    
   }
 
-  .image-4.active {
-    transform: translateX(0); /* นำภาพกลับไปให้อยู่ตำแหน่งปกติ */
-    opacity: 1;
-    transition-delay: 1s;
+  .image-4.active {    
+    opacity: 1;    
   }
 
   .text-block {
