@@ -553,14 +553,23 @@ img {
 
   .image-4 {    
     position: relative;
-    top: -25px;    
+    top: -55px;    
+    overflow: hidden;
+    white-space: nowrap;      
+  }
+
+  .seeyah {    
+    width: 250px;
+    position: relative;
+    top: -100px;    
+    left: 20px;
     overflow: hidden;
     white-space: nowrap;      
   }
 
   .container-3 {
     position: relative;
-    top: -290px;
+    top: -420px;
   }
 
   .paragraph-1-copy {
@@ -682,9 +691,7 @@ img {
     opacity: 1;    
   }
 
-  .image-4.active {    
-    opacity: 1;    
-  }
+  
 
   .text-block {
     text-align: center;
