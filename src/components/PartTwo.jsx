@@ -22,7 +22,7 @@ function PartTwo ()  {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [setIsHopeyouVisible]);
 
   useEffect(() => {
     if (isHopeyouVisible) {
@@ -31,17 +31,12 @@ function PartTwo ()  {
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "cubicBezier(.5, .05, .1, .3)",
         duration: 1000,
-        opacity: 1,
+        
         delay: function (el, i) {
           return i * 200;
         },
-        complete: function (anim) {
-          anime({
-            targets: "svg path",            
-            duration: 3500,
-            fill: "#f16622",
-          });
-        }
+        fill: "#f16622",
+            
       });
     }
   }, [isHopeyouVisible]);
@@ -60,13 +55,14 @@ function PartTwo ()  {
 
       <img src={text3} className='image-3' alt="logo" />      
 
+      {/* Hope-you */}
       <svg
           viewBox="0 0 580 433.01"
           style={{ fill: "none", stroke: "#F16622", strokeWidth: 1 }}
           className={`image-4 ${isHopeyouVisible ? 'active' : ''}`}
         >
         <g>
-	<g>
+	  <g>
 		<path class="st0" d="M180.19,37.4c-0.27,0-0.63,0.06-1.06,0.18l-0.33,0.09L178.53,38l-0.18,0.41l-0.25,0.19c-0.02,0-0.03,0-0.05,0
 			c-0.26,0-0.5-0.01-0.73-0.02c-0.03,0-0.05,0-0.08,0c-0.22,0-0.46,0.04-0.72,0.11c-2.29,4.96-4.43,10.17-6.4,15.64
 			c-1.98,5.47-3.8,10.95-5.47,16.45c-1.67,5.5-3.15,10.92-4.45,16.27c-1.3,5.35-2.42,10.44-3.36,15.25
@@ -626,7 +622,16 @@ function PartTwo ()  {
 			C530.5,297.92,530.24,297.71,529.72,297.54L529.72,297.54z"/>
 	</g>
 </g>
-</svg>
+      </svg>
+
+      {/* see-yah */}
+      {/* <svg
+          viewBox="0 0 580 433.01"
+          style={{ fill: "none", stroke: "#F16622", strokeWidth: 1 }}
+          className={`image-4 ${isHopeyouVisible ? 'active' : ''}`}
+        >
+        
+      </svg> */}
 
       <div className="w-layout-blockcontainer container-3 w-container">
 
