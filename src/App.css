@@ -368,7 +368,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -747,7 +747,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -1093,7 +1093,7 @@ img {
   }
 }
 
-@media (max-width: 1800px) {
+@media (min-width: 480px) and (max-width: 1800px){
   .App {
     position: relative;
     overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
@@ -1125,7 +1125,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -1157,8 +1157,7 @@ img {
 
   .splash-div .partone .symbol-one {
     position: relative;
-    top: 60px;    
-    transform-origin: center center;
+    top: 60px;        
   }
   
   .HomePage {
