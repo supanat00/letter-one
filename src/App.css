@@ -611,6 +611,9 @@ img {
   }
 
   .image-6 {
+    width: 350px;
+    left: 10px;
+    top: 40px;
     z-index: 3;
     position: relative;
     overflow: hidden;

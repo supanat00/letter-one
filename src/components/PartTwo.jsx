@@ -73,7 +73,8 @@ function PartTwo ()  {
       Date : &nbsp;&nbsp;&nbsp;Saturday November 18, 2023
         <br></br>
       Time :&nbsp;&nbsp;&nbsp;18:00 - Midnight
-    </div>         
+    </div>    
+
 	  {/* Dear-people */}
 	<svg
           viewBox="0 0 244.87 74.44"
@@ -106,6 +107,7 @@ function PartTwo ()  {
     </g>
   </g>
 	</svg>
+
       {/* Hope-you */}
     <svg
           viewBox="0 0 580 433.01"
@@ -1175,7 +1177,7 @@ function PartTwo ()  {
         
         <p className="paragraph-1">We'll get married! Finally!
         <br></br>The wait is really over.
-        <br></br>Pleas come to meet us, be our guest.
+        <br></br>Please come to meet us, be our guest.
         <br></br>I belive that we miss each other.</p>
         
         <p className="paragraph-1">We're looking forward to sharing
