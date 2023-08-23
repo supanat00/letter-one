@@ -336,10 +336,11 @@ img {
 /* Adding responsive styles for mini screens */
 @media (max-width: 479px) {
   .App {
+    position: relative;
+    overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
     background-image: url('../public/background/bg_paper.png');
     background-position: 0 0;
-    background-size: auto;
-    background-attachment: fixed;
+    background-size: cover;    
     background-clip: border-box;   
   }
 
@@ -405,8 +406,7 @@ img {
     background-image: url('../public/background/bg_paper.png');
     background-position: top center;
     background-repeat: repeat-y;
-    background-size: cover;
-    background-attachment: scroll;
+    background-size: cover;    
     display: block; /* เปลี่ยนเป็น flex */
     flex-direction: column; /* จัดเรียงแนวตั้ง */
     align-items: center; /* จัดกึ่งกลางแนวนอน */
@@ -490,9 +490,7 @@ img {
     left: -45px;
     right: 0;
     animation: flicker 1.5s infinite;
-  }
-
-  
+  }  
 
   .partone {
     grid-column-gap: 0px;
@@ -514,7 +512,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 500px;    
   }
 
   .partthree {
@@ -523,7 +521,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 500px;
+    top: 300px;
     bottom: 0;
   }
 
