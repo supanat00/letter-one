@@ -622,7 +622,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 568px){
+@media (min-width: 320px) and (max-width: 568px) {
   .App {
     position: relative;
     overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */    
@@ -723,21 +723,6 @@ img {
     position: relative;
   }
 
-  .container {
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0;
-    line-height: 0;
-    transition: opacity .3s;
-    display: flex;
-    position: relative;
-    top: 200px;
-    transform: rotate(0);
-  }
 
   .image-2 {
     text-align: left;
@@ -749,14 +734,7 @@ img {
     transform-origin: center center;
   }
 
-  .container-2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .symbol-two {
+  .symbol-two {    
     width: 50px;    
     flex: 0 auto;
     position: relative;
@@ -767,11 +745,11 @@ img {
     text-align: left;
     flex: 0 auto;
     font-family: 'AmericanTypewriter';
-    font-size: 11px;
+    font-size: 7px;
     font-weight: 700;
     position: relative;
     line-height: 15px;
-    left: -45px;
+    left: -30px;
     right: 0;
     animation: flicker 1.5s infinite;
   }  
@@ -787,7 +765,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 200px;
+    top: 100px;
   }
 
   .parttwo {
@@ -796,7 +774,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 500px;    
+    top: 280px;    
   }
 
   .partthree {
@@ -805,14 +783,14 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 300px;
+    top: 220px;
     bottom: 0;
+    white-space: nowrap;
   }
 
   .image-3 {
-    width: 210px;
-    position: relative;
-    top: 0;
+    width: 120px;
+    position: relative;   
   }
 
   .paragraph-1 {
@@ -824,27 +802,29 @@ img {
     margin-bottom: 0;
     padding-top: 0px;
     font-family: 'AmericanTypewriter';
-    font-size: 11px;
+    font-size: 7px;
     font-weight: 700;
     line-height: 15px;
     text-decoration: none;
     display: block;
     position: relative;
-    top: 0;    
+    top: 0px;    
+    left: 0px;
     
   }   
 
-  .image-4 {    
+  .image-4 {  
+    width: 220px;  
     position: relative;
-    top: -55px;    
+    top: 0px;    
     overflow: hidden;
     white-space: nowrap;      
   }
 
   .seeyah {    
-    width: 250px;
+    width: 180px;
     position: relative;
-    top: -100px;    
+    top: -0px;    
     left: 20px;
     overflow: hidden;
     white-space: nowrap;      
@@ -852,59 +832,42 @@ img {
 
   .container-3 {
     position: relative;
-    top: -420px;
-  }
-
-  .paragraph-1-copy {
-    z-index: 2;
-    direction: ltr;
-    color: #5c5c5c;
-    text-align: left;
-    text-transform: none;
-    margin-bottom: 0;
-    font-family: 'AmericanTypewriter';
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 15px;
-    text-decoration: none;
-    display: block;
-    position: relative;
-    top: 0;
+    top: -270px;
   }
 
   .note-one {
     color: #5c5c5c;
     text-align: center;
     font-family: 'AmericanTypewriter';
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 700;
     line-height: 15px;
     display: block;
     position: relative;
-    top: -300px;   
+    top: -220px;   
     animation: flicker 1.5s infinite;
   }
 
   .image-5 {
     animation: heartbeat 1s infinite;
-    width: 80px;
+    width: 50px;
     position: relative;
-    top: -280px;
+    top: -220px;
   }
 
   .image-6 {
-    width: 350px;
-    left: 10px;
-    top: 40px;
+    width: 190px;
+    left: 0px;
+    top: -80px;
     z-index: 3;
     position: relative;
     overflow: hidden;
     white-space: nowrap;    
-    opacity: 1;
-    overflow: hidden;    
+    opacity: 1;    
   }
 
   .picture {
+    width: 200px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -914,6 +877,7 @@ img {
   }
 
   .pic-m {
+    width: 230px;
     display: block;
     position: relative;
     overflow: hidden;
@@ -924,6 +888,7 @@ img {
   }
 
   .pic-l {
+    width: 230px;
     flex-flow: row;
     align-content: stretch;
     justify-content: center;
@@ -938,6 +903,7 @@ img {
   }
 
   .pic-r {
+    width: 230px;
     display: block;
     position: absolute;
     overflow: hidden;
@@ -948,8 +914,9 @@ img {
   }
 
   .image-7 {
+    width: 180px;
     position: relative;
-    top: -350px;
+    top: -300px;
     transform: translateX(0);
     opacity: 1;    
   }
@@ -977,21 +944,21 @@ img {
     text-align: center;
     color: #5c5c5c;
     font-family: "AmericanTypewriter";
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 700;
-    line-height: 15px;
+    line-height: 10px;
     display: block;
     position: relative;    
-    top: -350px;
-    left: -150px;
+    top: -280px;
+    left: -95px;
     width: 0;    
     animation: flicker 2s infinite;
   }
   a img.image-8 {    
-    width: 150px;
+    width: 100px;
     cursor: pointer;
     position: relative;
-    top: -320px;
+    top: -255px;
     animation: heartbeat 1s infinite;
   }
 }
