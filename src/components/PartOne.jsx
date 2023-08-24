@@ -1,5 +1,5 @@
 import React from 'react';
-import symbol1 from '../icon/symbol_1.png';
+import symbol1 from '../icon/symbol_1.svg';
 
 function PartOne ()  {    
      
