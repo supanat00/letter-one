@@ -792,6 +792,7 @@ img {
     display: block; /* เปลี่ยนเป็น flex */
     flex-direction: column; /* จัดเรียงแนวตั้ง */
     align-items: center; /* จัดกึ่งกลางแนวนอน */
+    grid-column: 16px;
   }
 
   
