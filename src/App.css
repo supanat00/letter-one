@@ -382,21 +382,6 @@ img {
     position: relative;
   }
 
-  .container {
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0;
-    line-height: 0;
-    transition: opacity .3s;
-    display: flex;
-    position: relative;
-    top: 200px;
-    transform: rotate(0);
-  }
 
   .image-2 {
     text-align: left;
@@ -408,15 +393,7 @@ img {
     transform-origin: center center;
   }
 
-  .container-2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .symbol-two {
-    top: -25px;
+  .symbol-two {    
     width: 50px;    
     flex: 0 auto;
     position: relative;
@@ -427,7 +404,7 @@ img {
     text-align: left;
     flex: 0 auto;
     font-family: 'AmericanTypewriter';
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 700;
     position: relative;
     line-height: 15px;
@@ -447,7 +424,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 200px;
+    top: 100px;
   }
 
   .parttwo {
@@ -456,7 +433,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 380px;    
+    top: 280px;    
   }
 
   .partthree {
@@ -465,13 +442,13 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 300px;
+    top: 220px;
     bottom: 0;
     white-space: nowrap;
   }
 
   .image-3 {
-    width: 150px;
+    width: 120px;
     position: relative;   
   }
 
@@ -484,7 +461,7 @@ img {
     margin-bottom: 0;
     padding-top: 0px;
     font-family: 'AmericanTypewriter';
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 700;
     line-height: 15px;
     text-decoration: none;
@@ -496,7 +473,7 @@ img {
   }   
 
   .image-4 {  
-    width: 250px;  
+    width: 220px;  
     position: relative;
     top: 0px;    
     overflow: hidden;
@@ -514,7 +491,7 @@ img {
 
   .container-3 {
     position: relative;
-    top: -280px;
+    top: -270px;
   }
 
   .note-one {
@@ -596,9 +573,9 @@ img {
   }
 
   .image-7 {
-    width: 200px;
+    width: 180px;
     position: relative;
-    top: -350px;
+    top: -300px;
     transform: translateX(0);
     opacity: 1;    
   }
@@ -628,10 +605,10 @@ img {
     font-family: "AmericanTypewriter";
     font-size: 6px;
     font-weight: 700;
-    line-height: 15px;
+    line-height: 10px;
     display: block;
     position: relative;    
-    top: -350px;
+    top: -280px;
     left: -95px;
     width: 0;    
     animation: flicker 2s infinite;
@@ -640,7 +617,7 @@ img {
     width: 100px;
     cursor: pointer;
     position: relative;
-    top: -335px;
+    top: -255px;
     animation: heartbeat 1s infinite;
   }
 }
