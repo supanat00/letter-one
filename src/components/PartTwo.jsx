@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import anime from "animejs";
-import symbol2 from '../icon/symbol_2.png';
+import symbol2 from '../icon/symbol_2.svg';
 import symbol3 from '../icon/symbol_3.svg';
 
 
