@@ -368,7 +368,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -475,8 +475,8 @@ img {
   }
 
   .symbol-two {
-    top: -15px;
-    width: 50px;    
+    top: -5px;
+    width: 40px;    
     flex: 0 auto;
     position: relative;
   }
@@ -746,7 +746,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -790,7 +790,6 @@ img {
     display: block; /* เปลี่ยนเป็น flex */
     flex-direction: column; /* จัดเรียงแนวตั้ง */
     align-items: center; /* จัดกึ่งกลางแนวนอน */
-    grid-column: 16px;
   }
 
   
@@ -854,7 +853,8 @@ img {
   }
 
   .symbol-two {
-    animation: heartbeat 1s infinite;
+    top: -10px;
+    width: 50px;
     flex: 0 auto;
     position: relative;
   }
@@ -1093,7 +1093,7 @@ img {
   }
 }
 
-@media (min-width: 476px) and (max-width: 1800px) {
+@media (min-width: 480px) and (max-width: 1800px){
   .App {
     position: relative;
     overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
@@ -1125,7 +1125,7 @@ img {
   }
 
   .splash-div .partone{
-    top: 250px;
+    top: 200px;
   }
 
   .splash-div .partone .you-are{
@@ -1157,8 +1157,7 @@ img {
 
   .splash-div .partone .symbol-one {
     position: relative;
-    top: 60px;    
-    transform-origin: center center;
+    top: 60px;        
   }
   
   .HomePage {
