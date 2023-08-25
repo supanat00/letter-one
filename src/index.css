@@ -5,7 +5,7 @@ html {
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: sans-serif;
+  font-family: sans-serif;  
 }
 
 html.w-mod-touch * {
@@ -23,6 +23,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url('../public/background/menn3_CO_Final2.png'); */
 }
 
 code {

@@ -338,12 +338,13 @@ img {
 
 @media (max-width: 350px) {
   .App {
-    position: relative;
-    overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
-    background-image: url('../public/background/bg_paper.png');
-    background-position: 0 0;
-    background-size: cover;    
-    background-clip: border-box;   
+    background-attachment: fixed;
+    overflow: scroll;
+    background-image: url('../public/background/background3.jpg');
+    background-position: top center;
+    background-size: cover;         
+    background-repeat: repeat-y;
+    display: block;
   }
 
   .App-splash {
@@ -405,7 +406,7 @@ img {
   }
   
   .HomePage {
-    background-image: url('../public/background/bg_paper.png');
+    background-image: url('../public/background/menn3_CO_Final2.png');
     background-position: top center;
     background-repeat: repeat-y;
     background-size: cover;    
@@ -515,7 +516,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 650px;    
   }
 
   .partthree {
@@ -524,7 +525,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 300px;
+    top: 750px;
     bottom: 0;
   }
 
@@ -708,19 +709,20 @@ img {
     width: 150px;
     cursor: pointer;
     position: relative;
-    top: -320px;
+    top: -280px;
     animation: heartbeat 1s infinite;
   }
 }
 
 @media (min-width: 351px) and  (max-width: 479px) {
   .App {
-    position: relative;
-    overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
-    background-image: url('../public/background/bg_paper.png');
-    background-position: 0 0;
-    background-size: cover;    
-    background-clip: border-box;   
+    background-attachment: fixed;
+    overflow: scroll;
+    background-image: url('../public/background/background3.jpg');
+    background-position: top center;
+    background-size: cover;         
+    background-repeat: repeat-y;
+    display: block;
   }
 
   .App-splash {
@@ -782,7 +784,7 @@ img {
   }
   
   .HomePage {
-    background-image: url('../public/background/bg_paper.png');
+    background-image: url('../public/background/menn3_CO_Final2.png');
     background-position: top center;
     background-repeat: repeat-y;
     background-size: cover;    
@@ -892,7 +894,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 650px;    
   }
 
   .partthree {
@@ -901,7 +903,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 300px;
+    top: 750px;
     bottom: 0;
   }
 
@@ -1092,12 +1094,13 @@ img {
 
 @media (min-width: 480px) and (max-width: 1800px){
   .App {
-    position: relative;
-    overflow: hidden; /* ป้องกันเนื้อหาเกินเส้นขอบ */
-    background-image: url('../public/background/bg_paper.png');
-    background-position: 0 0;
-    background-size: cover;    
-    background-clip: border-box;   
+    background-attachment: fixed;
+    overflow: scroll;
+    background-image: url('../public/background/background3.jpg');
+    background-position: top center;
+    background-size: cover;         
+    background-repeat: repeat-y;
+    display: block;
   }
 
   .App-splash {
@@ -1158,7 +1161,7 @@ img {
   }
   
   .HomePage {
-    background-image: url('../public/background/bg_paper.png');
+    background-image: url('../public/background/menn3_CO_Final2.png');
     background-position: top center;
     background-repeat: repeat-y;
     background-size: cover;    
@@ -1268,7 +1271,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 650px;    
   }
 
   .partthree {
@@ -1277,7 +1280,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 300px;
+    top: 750px;
     bottom: 0;
   }
 
