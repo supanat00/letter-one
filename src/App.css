@@ -475,8 +475,7 @@ img {
   }
 
   .symbol-two {
-    top: -5px;
-    width: 40px;    
+    animation: heartbeat 1s infinite;
     flex: 0 auto;
     position: relative;
   }
@@ -515,7 +514,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 500px;    
   }
 
   .partthree {
@@ -693,18 +692,20 @@ img {
   }
 
   .text-block {
+    text-align: center;
     color: #5c5c5c;
-    text-align: left;
-    font-family: 'AmericanTypewriter';
-    font-size: 6px;
+    font-family: "AmericanTypewriter";
+    font-size: 7px;
     font-weight: 700;
     line-height: 15px;
     display: block;
-    position: relative;
-    top: -330px;   
-    animation: flicker 1.5s infinite;
+    position: relative;    
+    top: -350px;
+    left: -120px;
+    text-align: center;
+    width: 0;    
+    animation: flicker 2s infinite;
   }
-
   a img.image-8 {    
     width: 150px;
     cursor: pointer;
@@ -853,8 +854,7 @@ img {
   }
 
   .symbol-two {
-    top: -10px;
-    width: 50px;
+    animation: heartbeat 1s infinite;
     flex: 0 auto;
     position: relative;
   }
@@ -893,7 +893,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 500px;    
   }
 
   .partthree {
@@ -1231,8 +1231,7 @@ img {
   }
 
   .symbol-two {
-    top: -15px;
-    width: 50px;
+    animation: heartbeat 1s infinite;
     flex: 0 auto;
     position: relative;
   }
@@ -1271,7 +1270,7 @@ img {
     align-items: center;
     display: flex;
     position: relative;
-    top: 550px;    
+    top: 500px;    
   }
 
   .partthree {
