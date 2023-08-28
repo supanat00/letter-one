@@ -23,7 +23,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url('../public/background/menn3_CO_Final2.png'); */
+  background-image: url('../public/background/background3.jpg');
+  background-size: cover; /* ทำให้ความกว้างเต็มหน้าจอและยืดความยาว */
+  background-repeat: no-repeat; /* ไม่ให้ภาพทับทับตัวเอง */
+  background-position: top center;  
+  background-attachment: fixed;
 }
 
 code {
