@@ -717,7 +717,7 @@ img {
 @media (min-width: 351px) and  (max-width: 479px) {
   .App {
     background-attachment: fixed;
-    overflow: scroll;
+    overflow: visible;
     background-image: url('../public/background/background3.jpg');
     background-position: top center;
     background-size: cover;         

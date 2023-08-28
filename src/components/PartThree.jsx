@@ -98,7 +98,7 @@ function PartThree () {
 
      
   <a
-    href="https://www.google.com/maps/place/276+Soi+Rama+IX+17,+Bang+Kapi,+Huai+Khwang,+Bangkok+10310"
+    href="https://maps.app.goo.gl/8cjHCtx6NNNtye7B6?g_st=il"
     target="_blank"
     rel="noopener noreferrer"
   >
