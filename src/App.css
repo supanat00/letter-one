@@ -716,8 +716,7 @@ img {
 
 @media (min-width: 351px) and  (max-width: 479px) {
   .App {
-    background-attachment: fixed;
-    overflow: scroll;
+    background-attachment: fixed;    
     background-image: url('../public/background/background3.jpg');
     background-position: top center;
     background-size: cover;         
@@ -784,7 +783,7 @@ img {
   }
   
   .HomePage {
-    background-image: url('../public/background/bg_paper.png');
+    background-image: url('../public/background/menn3_CO_Final2.png');
     background-position: top center;
     background-repeat: repeat-y;
     background-size: cover;    
